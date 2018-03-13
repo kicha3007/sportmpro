@@ -1,0 +1,21 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+.it-card__top {
+  @include row-flex();
+}
+
+.it-card__half--left {
+  @include col();
+  @include size(6);
+  @include size-sm(12);
+  background: green;
+}
+
+.it-card__half--right {
+  @include col();
+  @include size(6);
+  @include size-sm(12);
+  background: red;
+}

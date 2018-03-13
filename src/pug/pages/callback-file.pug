@@ -1,0 +1,32 @@
+section.it-callback.it-all--indent
+	.it-container
+		.it-callback__wrap
+			.it-callback-title
+				|    Отправьте заявку с сайта и получите скидку 20% на проектирование
+			.it-callback__input-wrap
+				form.it-callback__form(action="", method="post")
+					.it-callback__input-wrap
+						.it-callback__half
+							.it-callback__input-title
+								|	Ваше имя
+							input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Иван', required)
+						.it-callback__half
+							.it-callback__input-title
+								|    Ваш телефон
+							input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='+ 7 (999) 999-99-99', data-phone='true', required, data-mask='phone')
+						//.it-callback__half
+						//	.it-callback__input-title
+						//		|    Электронная почта
+						//	input.it-callback__input(type='mail', name='mail', maxlength='200', value='', placeholder='abc@mail.ru', )
+						.it-callback__half.it-callback__buttons
+							a(href="").it-btn.it-callback__btn Отправить заявку
+
+						.it-checkbox-wrap.it-callback__checkbox-wrap
+							label.it-checkbox
+										input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+										span.it-checkbox__pseudo
+										span.it-checkbox__text Подтверждаю свое согласие на обработку персональных данных
+						.it-form__success
+							| Спасибо!
+							br
+							|  Ваша заявка принята.

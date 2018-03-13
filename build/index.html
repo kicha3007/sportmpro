@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <title>Krasyiy les</title>
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="static/css/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  </head>
+  <body>
+    <div class="it-main-page__wrapper">
+      <div class="it-main-page__content">
+        <div class="it-container">
+          <div class="it-main-page__top">
+            <div class="it-main-page__left">
+              <section class="it-card">
+                <div class="it-card__wrap">
+                  <div class="it-card__top">
+                    <div class="it-card__half it-card__half--left">
+                      <div class="it-card__img-box"><img class="it-card__img" src="static/img/card/1.jpg" alt=""></div>
+                      <div class="it-card__code">	Арт. 312-345</div>
+                    </div>
+                    <div class="it-card__half it-card__half--right">
+                      <div class="it-card__content">
+                        <div class="it-card__title"></div>
+                        <div class="it-card__price"><span class="it-card__price-number"></span></div>
+                        <div class="it-card__model-wrap">
+                          <div class="it-card__model-title">	Свитер хоккейный</div>
+                          <div class="it-card__model-price">от<span class="it-card__model-price-value">	0 000 ₽</span></div>
+                          <div class="it-card__model-choice">	Выберите модель свитера:</div>
+                          <ul class="it-card__model-list">
+                            <li class="it-card__model-item">
+                              <label class="it-card__model-checkbox">
+                                <input class="it-card__model-checkbox__default" type="radio" name="model1">
+                                <div class="it-card__model-checkbox__pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/2.jpg" alt=""></div>
+                              </label>
+                            </li>
+                            <li class="it-card__model-item">
+                              <label class="it-card__model-checkbox">
+                                <input class="it-card__model-checkbox__default" type="radio" name="model1">
+                                <div class="it-card__model-checkbox__pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/2.jpg" alt=""></div>
+                              </label>
+                            </li>
+                          </ul><a class="it-card__model-show-all" href="#">	показать все модели свитеров</a>
+                          <label class="it-card__input-wrap">
+                            <div class="it-card__input-text"></div>
+                            <select class="it-card__select" name="fuel" required="" disabled="">
+                              <option value="Классический" selected="">Классический</option>
+                              <option value="Электрический котел">Электрический котел</option>
+                              <option value="Пеллетный котел">Пеллетный котел</option>
+                            </select>
+                          </label>
+                          <label class="it-card__input-wrap">
+                            <div class="it-card__input-text"></div>
+                            <div class="it-card__input-inner-wrap">
+                              <div class="it-card__input-minus"></div>
+                              <input class="it-card__input-quantity" name="количество">
+                              <div class="it-card__input-minus"></div>
+                            </div>
+                          </label>
+                          <div class="it-card__checkbox-wrap">
+                            <label class="it-checkbox">
+                              <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Срочный заказ (1-2 дня)<br>	надбавка 50%</span>
+                            </label>
+                            <label class="it-checkbox">
+                              <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Срочный заказ (3-4 дня)<br>надбавка 25%</span>
+                            </label>
+                          </div>
+                          <div class="it-card__show-catalog">	посмотреть каталог размеров и цен</div>
+                          <div class="it-card__all-price">
+                            <div class="it-card__all-price-text"></div>
+                            <div class="it-card__all-price-number">от<span class="it-card__all-price-value">00 000</span>руб.*</div>
+                          </div>
+                          <div class="it-card__buttons-wrap">
+                            <div class="it-card__buttons"><a class="it-btn it-card__btn">	Оформить заказ</a></div>
+                            <div class="it-card__buttons"><a class="it-btn it-card__btn it-card__btn--all-transparent">	Добавить деталей к заказу</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="it-callback it-all--indent">
+                <div class="it-container">
+                  <div class="it-callback__wrap">
+                    <div class="it-callback-title">   Отправьте заявку с сайта и получите скидку 20% на проектирование</div>
+                    <div class="it-callback__input-wrap">
+                      <form class="it-callback__form" action="" method="post">
+                        <div class="it-callback__input-wrap">
+                          <div class="it-callback__half">
+                            <div class="it-callback__input-title">	Ваше имя</div>
+                            <input class="it-callback__input" type="text" name="NAME" maxlength="200" value="" placeholder="Иван" required>
+                          </div>
+                          <div class="it-callback__half">
+                            <div class="it-callback__input-title">   Ваш телефон</div>
+                            <input class="it-callback__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="+ 7 (999) 999-99-99" data-phone="true" required data-mask="phone">
+                          </div>
+                          <!--.it-callback__half-->
+                          <!--	.it-callback__input-title-->
+                          <!--		|    Электронная почта-->
+                          <!--	input.it-callback__input(type='mail', name='mail', maxlength='200', value='', placeholder='abc@mail.ru', )-->
+                          <div class="it-callback__half it-callback__buttons"><a class="it-btn it-callback__btn" href="">Отправить заявку</a></div>
+                          <div class="it-checkbox-wrap it-callback__checkbox-wrap">
+                            <label class="it-checkbox">
+                              <input class="it-checkbox__default" type="checkbox" name="AGREE" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">Подтверждаю свое согласие на обработку персональных данных</span>
+                            </label>
+                          </div>
+                          <div class="it-form__success">Спасибо!<br> Ваша заявка принята.</div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- --------------------- it-steps --------------------------->
+              <section class="it-steps">
+                <div class="it-steps__wrap">
+                  <div class="it-steps__title" data-calculation-title>Уточните комплектацию для расчета стоимости дома:</div>
+                  <div class="it-steps__item">
+                    <div class="it-steps__step">Шаг &#32;<span class="it-steps__step-number" data-it-calculation-counter="">1</span>:<span class="it-steps__step-text" data-it-calculation-text="">Выберите материал для строительства</span></div>
+                    <div class="it-steps__step-line">
+                      <div class="it-steps__line-inner" data-it-line-inner=""></div>
+                    </div>
+                    <form class="it-steps__form it-form--hide" action="/sendCallBack.php" data-it-form="">
+                      <ul class="it-steps__inner-wrap">
+                        <li class="it-steps__inner-item" data-it-calculation-item="1">
+                          <ul class="it-steps__inner-list">
+                            <li class="it-steps__half">
+                              <div class="it-checkbox it-steps__checkbox">
+                                <label class="it-checkbox">
+                                  <input class="it-checkbox__default" type="radio" name="материал" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">	Клееный брус</span>
+                                </label>
+                              </div>
+                              <div class="it-steps__img-box"><img class="it-steps__img" src="static/img/steps/1.png" alt=""></div>
+                            </li>
+                            <li class="it-steps__half">
+                              <div class="it-checkbox it-steps__checkbox">
+                                <label class="it-checkbox">
+                                  <input class="it-checkbox__default" type="radio" name="материал"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Сухой проф.брус</span>
+                                </label>
+                              </div>
+                              <div class="it-steps__img-box"><img class="it-steps__img" src="static/img/steps/2.png" alt=""></div>
+                            </li>
+                            <div class="it-validate-error">Заполните поля</div>
+                          </ul>
+                        </li>
+                        <li class="it-steps__inner-item" data-it-calculation-item="2">
+                          <ul class="it-steps__inner-list">
+                            <li class="it-steps__half it-steps__half--size2">
+                              <div class="it-steps__inner-half">
+                                <div class="it-steps__img-box it-steps__img-box--min"><img class="it-steps__img" src="static/img/steps/3.png" alt=""></div>
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="radio" name="степень постройки" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Дом под ключ</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size2">
+                              <div class="it-steps__inner-half">
+                                <div class="it-steps__img-box it-steps__img-box--min"><img class="it-steps__img" src="static/img/steps/4.png" alt=""></div>
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="radio" name="степень постройки"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">  Дом под кровлю</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size2">
+                              <div class="it-steps__inner-half">
+                                <div class="it-steps__img-box it-steps__img-box--min"><img class="it-steps__img" src="static/img/steps/5.png" alt=""></div>
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="radio" name="степень постройки"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Теплый контур</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size2">
+                              <div class="it-steps__inner-half">
+                                <div class="it-steps__img-box it-steps__img-box--min"><img class="it-steps__img" src="static/img/steps/6.png" alt=""></div>
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="radio" name="степень постройки"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Стенокомплект</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="it-steps__inner-item" data-it-calculation-item="3">
+                          <ul class="it-steps__inner-list it-steps__inner-wrap--column">
+                            <li class="it-steps__half it-steps__half--size3">
+                              <div class="it-steps__half-title">	Инженерные системы</div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Электрика</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Сантехника</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Канализация и водопровод (водоподведение и водоотведение)</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Отопление</span>
+                                  </label>
+                                </div>
+                                <div class="it-steps__select-wrap">
+                                  <select class="it-steps__select" name="fuel" required="" disabled="">
+                                    <option value="Газовый котел" selected="">Газовый котел</option>
+                                    <option value="Электрический котел">Электрический котел</option>
+                                    <option value="Пеллетный котел">Пеллетный котел</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size3">
+                              <div class="it-steps__half-title">   Зона СПА</div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Сауна</span>
+                                  </label>
+                                </div>
+                                <div class="it-steps__select-wrap">
+                                  <select class="it-steps__select" name="fuel" required="" disabled="">
+                                    <option value="Финская" selected="">Финская</option>
+                                    <option value="Инфракрасная">Инфракрасная</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Джакузи</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Бассейн</span>
+                                  </label>
+                                </div>
+                                <div class="it-steps__select-wrap">
+                                  <select class="it-steps__select" name="fuel" required="" disabled="">
+                                    <option value="Закрытый бассейн" selected="">Закрытый бассейн</option>
+                                    <option value="Взрослый бассейн">Взрослый бассейн</option>
+                                    <option value="Детский бассейн">Детский бассейн</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size3">
+                              <div class="it-steps__half-title">   Специализированные помещения</div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Мастерская</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Бильярдная</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Тренажерный зал</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Домашний кинотеатр</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Винный погреб</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Гардеробная</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Прачечная</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Помещение для животных</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size3">
+                              <div class="it-steps__half-title">   Интерьерные решения</div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Балкон</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Печь</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Камин</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Лестница</span>
+                                  </label>
+                                </div>
+                                <div class="it-steps__select-wrap">
+                                  <select class="it-steps__select" name="fuel" required="" disabled="">
+                                    <option value="Винтовая" selected="">Винтовая</option>
+                                    <option value="Маршевая">Маршевая</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Терраса</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Второй свет</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Зимний сад</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size3">
+                              <div class="it-steps__half-title">   Окна</div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Мансардные окна</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Витражные окна</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="it-steps__half it-steps__half--size3">
+                              <div class="it-steps__half-title">   Благоустройство участка</div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Гараж</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Забор</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Беседка</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Барбекю</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Искусственный пруд</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Баня</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">  Домик для детей</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Детская площадка</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="it-steps__inner-half">
+                                <div class="it-checkbox it-steps__checkbox">
+                                  <label class="it-checkbox">
+                                    <input class="it-checkbox__default" type="checkbox" name="AGREE"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Конюшня</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="it-steps__inner-item" data-it-calculation-item="4">
+                          <div class="it-callback__input-wrap">
+                            <div class="it-callback__half">
+                              <div class="it-callback__input-title">	Ваше имя</div>
+                              <input class="it-callback__input" type="text" name="NAME" maxlength="200" value="" placeholder="Иван" required>
+                            </div>
+                            <div class="it-callback__half">
+                              <div class="it-callback__input-title">   Ваш телефон</div>
+                              <input class="it-callback__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="+ 7 (999) 999-99-99" data-phone="true" required data-mask="phone">
+                            </div>
+                            <div class="it-callback__half">
+                              <div class="it-callback__input-title">   Электронная почта</div>
+                              <input class="it-callback__input" type="mail" name="mail" maxlength="200" value="" placeholder="abc@mail.ru">
+                            </div>
+                          </div>
+                          <div class="it-form__success">Спасибо!<br> Ваша заявка принята.</div>
+                          <div class="it-checkbox-wrap it-callback__checkbox-wrap it-steps__checkbox-wrap">
+                            <label class="it-checkbox">
+                              <input class="it-checkbox__default" type="checkbox" name="AGREE" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">Подтверждаю свое согласие на обработку персональных данных</span>
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="it-steps__buttons">
+                        <button class="it-btn it-steps__btn it-steps__btn--prev" type="button" data-it-btn="prev">Назад</button>
+                        <button class="it-btn it-steps__btn it-steps__btn--next it-btn--arrow active" type="button" data-it-btn="next">Далее<img class="it-btn--arrow" src="static/img/arrow.png" alt=""></button>
+                        <button class="it-btn it-steps__btn it-steps__btn--send" type="submit" data-it-btn="send">Отправить</button>
+                      </div>
+                      <div class="it-form__success">
+                        <p>Спасибо!</p>
+                        <p>Ваша заявка принята</p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+              <section class="it-callback it-all--indent">
+                <div class="it-container">
+                  <div class="it-callback__wrap">
+                    <div class="it-callback-title">   Отправьте заявку с сайта и получите скидку 20% на проектирование</div>
+                    <div class="it-callback__input-wrap">
+                      <form class="it-callback__form" action="" method="post">
+                        <div class="it-callback__input-wrap">
+                          <div class="it-callback__half">
+                            <div class="it-callback__input-title">	Ваше имя</div>
+                            <input class="it-callback__input" type="text" name="NAME" maxlength="200" value="" placeholder="Иван" required>
+                          </div>
+                          <div class="it-callback__half">
+                            <div class="it-callback__input-title">   Ваш телефон</div>
+                            <input class="it-callback__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="+ 7 (999) 999-99-99" data-phone="true" required data-mask="phone">
+                          </div>
+                          <!--.it-callback__half-->
+                          <!--	.it-callback__input-title-->
+                          <!--		|    Электронная почта-->
+                          <!--	input.it-callback__input(type='mail', name='mail', maxlength='200', value='', placeholder='abc@mail.ru', )-->
+                          <div class="it-callback__half it-callback__buttons"><a class="it-btn it-callback__btn" href="">Отправить заявку</a></div>
+                          <div class="it-checkbox-wrap it-callback__checkbox-wrap">
+                            <label class="it-checkbox">
+                              <input class="it-checkbox__default" type="checkbox" name="AGREE" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">Подтверждаю свое согласие на обработку персональных данных</span>
+                            </label>
+                          </div>
+                          <div class="it-form__success">Спасибо!<br> Ваша заявка принята.</div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <aside class="it-main-page__right">
+              <aside class="other-progectss">
+                <div class="other-progects__title">	Похожие проекты:</div>
+                <div class="other-progectss__wrap">
+                  <ul class="other-progects__list">
+                    <li class="other-progects__item"><a class="other-progects__inner-item" href="#">
+                        <div class="other-progects__img-box"><img class="other-progects__img" src="static/img/other-progects/1.jpg" alt=""></div>
+                        <div class="other-progects__content">
+                          <div class="other-progects__item-title">	Проект №301</div>
+                          <div class="other-progects__item-price">	от<span>	6 230 400</span>	₽</div>
+                        </div></a></li>
+                    <li class="other-progects__item"><a class="other-progects__inner-item" href="#">
+                        <div class="other-progects__img-box"><img class="other-progects__img" src="static/img/other-progects/1.jpg" alt=""></div>
+                        <div class="other-progects__content">
+                          <div class="other-progects__item-title">   Проект №301</div>
+                          <div class="other-progects__item-price">   от<span>   6 230 400</span>   ₽</div>
+                        </div></a></li>
+                  </ul>
+                  <div class="other-progects__person">
+                    <ul class="other-progects__person__list">
+                      <li class="other-progects__person-item">
+                        <div class="other-progects__person-img-box"><img class="other-progects__person-img" src="static/img/other-progects/2.jpg" alt=""></div>
+                        <div class="other-progects__person-content">
+                          <div class="other-progects__person-title">
+                               Директор по строительству
+                            Александр Александрович
+                          </div>
+                          <div class="other-progects__person-subtitle">	Отвечу на любые вопросы</div>
+                          <div class="other-progects__person-buttons">
+                            <div class="other-progects__person-btn it-btn">	Задать вопрос</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </aside>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery.min.js" type="text/javascript"></script>
+    <script src="static/js/jquery.fancybox.js" type="text/javascript"></script>
+    <script src="static/js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="static/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="static/js/main.js" type="text/javascript"></script>
+  </body>
+</html>

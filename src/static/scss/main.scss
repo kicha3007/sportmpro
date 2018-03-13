@@ -1,20 +1,17 @@
 @import '__vars';
 @import '__mixins';
-@import 'card';
 @import "smart-grid";
-@import "other-progects";
 @import "steps";
-@import "file-drop";
 @import "callback";
+@import "card";
 @import "tabs";
-@import "price-house";
-@import "service";
-@import "video";
+@import "other-progects";
+@import "advantages";
+@import "partners";
+@import "about-us";
+@import "photo";
+@import "modal";
 
-
-@include font-face(HelveticaNeueCyr-Bold, fonts/HelveticaNeueCyr);
-@include font-face(HelveticaNeueCyr-Thin, fonts/HelveticaNeueCyr);
-@include font-face(HelveticaNeueCyr-Medium, fonts/HelveticaNeueCyr);
 
 
 /******************* it-all-style *******************/
@@ -44,13 +41,10 @@ body * {
 }
 
 .it-container {
-  max-width: 1180px;
+  max-width: 1060px;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 15px;
   margin: 0 auto;
-  @include tablets {
-    padding: 0 15px;
-  }
 }
 
 
@@ -146,7 +140,7 @@ body * {
 
 .it-main-page__top {
   @include row-flex();
-
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .it-main-page__left {
@@ -161,15 +155,10 @@ body * {
   @include col();
   @include size(3);
   @include size-sm(12);
-  padding-top: 60px;
-  @include tablets {
-    padding-top: 0;
-  }
+  background: yellow;
 }
 
-.it-main-page__bottom {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
+
 
 .it-btn {
   display: inline-block;
@@ -246,4 +235,10 @@ body * {
     font-size: 13px;
   }
 
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

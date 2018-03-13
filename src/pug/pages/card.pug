@@ -1,0 +1,84 @@
+section.it-card
+	.it-card__wrap
+		.it-card__top
+			.it-card__half.it-card__half--left
+				.it-card__img-box
+					img(src="static/img/card/1.jpg", alt='').it-card__img
+				.it-card__code
+						|	Арт. 312-345
+			.it-card__half.it-card__half--right
+				.it-card__content
+					.it-card__title
+					.it-card__price
+						span.it-card__price-number
+					.it-card__model-wrap
+						.it-card__model-title
+							|	Свитер хоккейный
+						.it-card__model-price
+							| от
+							span.it-card__model-price-value
+								|	0 000 ₽
+						.it-card__model-choice
+							|	Выберите модель свитера:
+
+						ul.it-card__model-list
+							li.it-card__model-item
+								label.it-card__model-checkbox
+									input.it-card__model-checkbox__default(type="radio" name="model1" )
+									.it-card__model-checkbox__pseudo
+										img(src="static/img/card/2.jpg", alt='').it-card__model-checkbox-img
+							li.it-card__model-item
+								label.it-card__model-checkbox
+									input.it-card__model-checkbox__default(type="radio" name="model1" )
+									.it-card__model-checkbox__pseudo
+										img(src="static/img/card/2.jpg", alt='').it-card__model-checkbox-img
+
+						a(href="#").it-card__model-show-all
+							|	показать все модели свитеров
+						label.it-card__input-wrap
+							.it-card__input-text
+							select.it-card__select(name='fuel', required='' disabled="")
+								option(value='Классический', selected='', )
+									| Классический
+								option(value='Электрический котел')
+									| Электрический котел
+								option(value='Пеллетный котел')
+									| Пеллетный котел
+						label.it-card__input-wrap
+							.it-card__input-text
+							.it-card__input-inner-wrap
+								.it-card__input-minus
+								input(name="количество").it-card__input-quantity
+								.it-card__input-minus
+						.it-card__checkbox-wrap
+							label.it-checkbox
+								input.it-checkbox__default(type="checkbox" name="AGREE" )
+								span.it-checkbox__pseudo
+								span.it-checkbox__text
+									|    Срочный заказ (1-2 дня)
+									br
+									|	надбавка 50%
+							label.it-checkbox
+								input.it-checkbox__default(type="checkbox" name="AGREE" )
+								span.it-checkbox__pseudo
+								span.it-checkbox__text
+									|    Срочный заказ (3-4 дня)
+									br
+									| надбавка 25%
+						.it-card__show-catalog
+							|	посмотреть каталог размеров и цен
+						.it-card__all-price
+							.it-card__all-price-text
+							.it-card__all-price-number
+								| от
+								span.it-card__all-price-value
+									| 00 000
+								| руб.*
+						.it-card__buttons-wrap
+							.it-card__buttons
+								a.it-btn.it-card__btn
+									|	Оформить заказ
+							.it-card__buttons
+								a.it-btn.it-card__btn.it-card__btn--all-transparent
+									|	Добавить деталей к заказу
+
