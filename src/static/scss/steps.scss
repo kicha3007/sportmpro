@@ -1,0 +1,277 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+/******************* it-steps *******************/
+
+.it-steps__wrap {
+  padding: 40px 5%;
+  position: relative;
+  min-height: 420px;
+  border: 10px solid rgba(242, 239, 237, 1);
+  @include phones {
+    padding: 40px 0;
+    border-color: transparent;
+
+  }
+}
+
+.it-steps__inner-wrap {
+  margin: 0;
+  padding: 0;
+}
+
+.it-steps__title {
+  text-align: center;
+  font-size: rem(20px);
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+//.it-steps__item {
+//  min-height: 362px;
+//}
+
+.it-steps__form {
+  height: 100%;
+}
+
+.it-steps__step-line {
+  width: 100%;
+  height: 3px;
+  background-color: #DEDEDE;
+  margin-bottom: 20px;
+}
+
+.it-steps__line-inner {
+  width: 25%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: $main-color;
+  transition: 0.2s;
+}
+
+.it-steps__select {
+  width: 180px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-size: 12px;
+  color: #363636;
+  display: inline-block;
+  height: 30px;
+  padding: 5px 10px 5px 25px;
+  position: relative;
+  @include tablets {
+    width: 100px;
+  }
+}
+
+.it-steps__select-wrap {
+  position: relative;
+  margin-bottom: 20px;
+
+}
+
+.it-steps__select-wrap:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  background-color: #fff;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.it-steps__select[disabled] {
+  opacity: 0.6;
+}
+
+.it-steps__subtitle {
+  font-weight: 300;
+  font-size: 1.12rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.it-steps__subtitle--indent {
+  padding-top: 20px;
+}
+
+.it-steps__half-title {
+  color: #363636;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.it-steps__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: auto !important;
+}
+
+.it-steps .it-steps__btn {
+  max-width: 160px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.it-steps__btn.active + .it-steps__btn {
+  margin-left: 20px;
+}
+
+.it-steps .it-steps__btn--prev {
+  background-color: transparent;
+  color: $main-color;
+  text-decoration: underline;
+}
+
+.it-steps__btn--prev:not(.active) {
+  display: none;
+}
+
+.it-steps .it-steps__btn--prev:hover {
+  color: $main-color;
+}
+
+.it-steps__btn--send:not(.active) {
+  display: none;
+}
+
+.it-steps__btn--next:not(.active) {
+  display: none;
+}
+
+.it-steps__img-box {
+  max-width: 130px;
+  height: 95px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 35px;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.it-steps__img-box--min {
+  max-width: 50px;
+  height: 50px;
+
+}
+
+.it-steps__img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.it-steps__step,
+.it-steps__step-number {
+  font-weight: 700;
+  color: $main-color;
+  font-size: rem(18px);
+  text-transform: uppercase;
+}
+
+.it-steps__step {
+  margin-bottom: 15px;
+}
+
+.it-steps__step-text {
+  margin-left: 15px;
+  font-size: rem(14px);
+  text-transform: none;
+
+}
+
+.it-steps__inner-item {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.it-steps__inner-item:not(:first-child) {
+  display: none;
+}
+
+.it-steps__inner-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.it-steps__inner-half {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.it-steps__half {
+  max-width: 230px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 9%;
+  list-style-type: none;
+  align-items: flex-start;
+  @include phones {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+}
+
+
+.it-steps__half--size2 {
+  max-width: 335px;
+  padding-left: 5%;
+}
+
+
+
+.it-validate-error {
+  color: #DB3A5C;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.it-validate-error:not(.active) {
+  display: none;
+}
+
+.it-validate-color {
+  border: 1px solid #DB3A5C;
+  color: red;
+}
+
+.it-steps__inner-wrap--column {
+  column-count: 2;
+  column-gap: 1em;
+  display: block;
+}
+
+.it-steps__inner-wrap--column .it-steps__half--size3 {
+  display: inline-block; // важно!
+  width: 100%;           // важно!
+  padding-left: 6%;
+}
+
+
+
+/*******************  *******************/
+
+
+.it-steps .it-steps__checkbox-wrap {
+  margin-bottom: 25px;
+}
+
