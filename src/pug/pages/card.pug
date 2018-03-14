@@ -7,7 +7,7 @@ section.it-card
 				.it-card__code
 						|	Арт. 312-345
 			.it-card__half.it-card__half--right
-				.it-card__content
+				form(action="" method="post").it-card__form
 					.it-card__title
 					.it-card__price
 						span.it-card__price-number
@@ -24,55 +24,72 @@ section.it-card
 						ul.it-card__model-list
 							li.it-card__model-item
 								label.it-card__model-checkbox
-									input.it-card__model-checkbox__default(type="radio" name="model1" )
-									.it-card__model-checkbox__pseudo
+									input.it-card__model-checkbox-default(type="radio" name="model1" checked)
+									.it-card__model-checkbox-pseudo
 										img(src="static/img/card/2.jpg", alt='').it-card__model-checkbox-img
 							li.it-card__model-item
 								label.it-card__model-checkbox
-									input.it-card__model-checkbox__default(type="radio" name="model1" )
-									.it-card__model-checkbox__pseudo
-										img(src="static/img/card/2.jpg", alt='').it-card__model-checkbox-img
+									input.it-card__model-checkbox-default(type="radio" name="model1" )
+									.it-card__model-checkbox-pseudo
+										img(src="static/img/card/3.jpg", alt='').it-card__model-checkbox-img
+							li.it-card__model-item
+								label.it-card__model-checkbox
+									input.it-card__model-checkbox-default(type="radio" name="model1" )
+									.it-card__model-checkbox-pseudo
+										img(src="static/img/card/4.jpg", alt='').it-card__model-checkbox-img
+							li.it-card__model-item
+								label.it-card__model-checkbox
+									input.it-card__model-checkbox-default(type="radio" name="model1" )
+									.it-card__model-checkbox-pseudo
+										img(src="static/img/card/5.jpg", alt='').it-card__model-checkbox-img
 
 						a(href="#").it-card__model-show-all
 							|	показать все модели свитеров
 						label.it-card__input-wrap
 							.it-card__input-text
-							select.it-card__select(name='fuel', required='' disabled="")
-								option(value='Классический', selected='', )
-									| Классический
-								option(value='Электрический котел')
-									| Электрический котел
-								option(value='Пеллетный котел')
-									| Пеллетный котел
+								|	Тип свитера:
+							.it-card__select-wrap
+								select.it-card__select(name='fuel', required='' )
+									option(value='Классический', selected='', )
+										| Классический
+									option(value='Электрический котел')
+										| Электрический котел
+									option(value='Пеллетный котел')
+										| Пеллетный котел
 						label.it-card__input-wrap
 							.it-card__input-text
+								|	Количество:
 							.it-card__input-inner-wrap
-								.it-card__input-minus
-								input(name="количество").it-card__input-quantity
-								.it-card__input-minus
+								.it-card__input-sign
+									|	-
+								input.it-card__input-sign(name="количество" value="1").it-card__input-quantity
+								.it-card__input-sign
+									|	+
 						.it-card__checkbox-wrap
-							label.it-checkbox
+							label.it-checkbox.it-card__checkbox
 								input.it-checkbox__default(type="checkbox" name="AGREE" )
-								span.it-checkbox__pseudo
-								span.it-checkbox__text
+								span.it-checkbox__pseudo.it-card__checkbox-pseudo
+								span.it-checkbox__text.it-card__checkbox-text
 									|    Срочный заказ (1-2 дня)
 									br
 									|	надбавка 50%
-							label.it-checkbox
+							label.it-checkbox.it-card__checkbox
 								input.it-checkbox__default(type="checkbox" name="AGREE" )
-								span.it-checkbox__pseudo
-								span.it-checkbox__text
+								span.it-checkbox__pseudo.it-card__checkbox-pseudo
+								span.it-checkbox__text.it-card__checkbox-text
 									|    Срочный заказ (3-4 дня)
 									br
 									| надбавка 25%
-						.it-card__show-catalog
+						a(href="#").it-card__show-catalog
 							|	посмотреть каталог размеров и цен
+
 						.it-card__all-price
 							.it-card__all-price-text
+								|	Общая стоимость:
 							.it-card__all-price-number
-								| от
+								| от &#32;
 								span.it-card__all-price-value
-									| 00 000
+									| 00 000 &#32;
 								| руб.*
 						.it-card__buttons-wrap
 							.it-card__buttons
