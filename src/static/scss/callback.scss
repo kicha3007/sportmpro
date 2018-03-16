@@ -8,24 +8,24 @@
 
 
 .it-callback__wrap {
-  background-color: #ffffff;
   padding: 35px 25px;
   overflow: hidden;
-  border: 10px solid  rgba(242, 239, 237, 1);
+  background-color: #EDEDED;
 }
 
 .it-callback-title {
   font-weight: 700;
-  font-size: rem(20px);
-  margin-bottom: 10px;
+  font-size: rem(18px);
+  margin-bottom: 20px;
   text-align: center;
-  color: #000000;
+  color: #333333;
 }
 
-.it-callback__subtitle {
-  font-size: 24px;
+.it-callback-subtitle {
+  font-size: 14px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 
 .it-callback__form {
@@ -56,7 +56,7 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin: 0 -6px 20px;
+  margin: 0 -10px 0;
   overflow: hidden;
 }
 
@@ -64,7 +64,7 @@
   flex-grow: 1;
   flex-basis: 150px;
   width: 100%;
-  margin: 0 6px 10px;
+  margin: 0 10px 25px;
   max-width: 252px;
 }
 
@@ -86,8 +86,8 @@
 }
 
 .it-callback__input {
-  border: 1px solid rgba(80, 66, 66, 0.2);
-  font-size: 12px;
+  border: none;
+  font-size: 14px;
   padding: 10px 20px;
   color: rgba(0, 0, 0, 0.38);
   width: 100%;
@@ -96,19 +96,11 @@
 }
 
 .it-callback__buttons {
-  max-width: 130px;
+  max-width: 100px;
   width: 100%;
   margin-top: auto;
 }
 
-.it-card__selec-wrap {
-
-}
-
-.it-card__select {
-  max-width: 190px;
-  width: 100%;
-}
 
 
 /******************* checkbox *******************/
@@ -129,7 +121,7 @@
   align-items: center;
   cursor: pointer;
   text-align: left;
-  max-width: 400px;
+  max-width: 250px;
   width: 100%;
   position: relative;
 
@@ -157,7 +149,7 @@
 .it-checkbox__pseudo {
   background-color: #fff;
   border: 1px solid rgba(80,66,66,.2);
-  margin-right: 8px;
+  margin-right: 20px;
   position: relative;
   left: 0;
   top: 0;
@@ -187,16 +179,12 @@
   cursor: pointer;
 }
 
-.it-checkbox__default:checked+.checkbox-custom-dummy+.it-checkbox__pseudo:before,
+
 .it-checkbox__default:checked+.it-checkbox__pseudo:before {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-}
-
-.it-price-checkbox__default:checked+.it-price-checkbox__pseudo+.it-price-checkbox-text {
-  font-weight: 700;
 }
 
 .it-checkbox__text {
@@ -216,7 +204,6 @@
 
 .it-callback__checkbox-wrap {
   text-align: center;
-  margin: 0 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +215,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 10px;
+  margin: 0 0 5px;
 }
 /******************* success *******************/
 
@@ -261,4 +248,53 @@
 
 .it-price-house__input-wrap {
   margin-bottom: -20px;
+}
+
+
+/******************* it-callback + it-input-file *******************/
+
+.it-callback__file-label {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+.it-callback__file-label:before {
+	content: 'doc, docx, xls, pdf, jpg. Размер не более 10 Mb';
+	display: block;
+	position: absolute;
+	top: 102%;
+	left: 0;
+	width: 100%;
+	height: auto;
+    font-size: 10px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+  z-index: 20;
+  line-height: 1.2;
+
+}
+
+.it-callback__file {
+  display: none !important;
+}
+
+
+.it-callback__file-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -80px;
+  width: 160px;
+  height: 13px;
+  font-size: 9px;
+  color: rgba(51, 51, 51, 0.5);
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+.it-file__input-wrap {
+  justify-content: flex-start;
 }

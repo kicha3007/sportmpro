@@ -1,3 +1,62 @@
 @import "__vars";
 @import "__mixins";
 @import "smart-grid";
+
+.it-advantages__list {
+  padding: 0;
+  margin: 0 0 -30px 0;
+  justify-content: center;
+  @include row-flex();
+}
+
+.it-advantages__item {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0;
+  margin-bottom: 30px;
+  @include col();
+  @include size(3);
+  @include size-md(6);
+  @include size-xs(12);
+}
+
+.it-advantages__inner-item {
+  text-align: center;
+}
+
+.it-advantages__top {
+  text-align: center;
+}
+
+.it-advantages__img-box {
+  height: 76px;
+  width: 76px;
+  overflow: hidden;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-color: $main-color;
+}
+
+.it-advantages__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.it-advantages__title {
+  font-size: rem(14px);
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.it-advantages__desc {
+  font-size: rem(14px);
+  color: rgba(0, 0, 0, 0.54);
+}

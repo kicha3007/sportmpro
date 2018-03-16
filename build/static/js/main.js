@@ -130,9 +130,6 @@ $(function () {
             var dataValue = $(dataTabValue).addClass("active");
 
             var pos = $(dataValue).position();
-//                    window.scrollTo(pos);
-
-//                $('html, body').animate({ scrollTop: croll_el.offset().top }, 500);
 
         });
 
@@ -165,51 +162,45 @@ $("[data-phone]").mask("+7 (999) 99-99-999");
 
 /* ------------------- calculation ----------------------- */
 
-var stepCounter = 1;
+var stepCounter = +1;
 
-var lineInner = $("[data-it-line-inner]");
 var btnPrev = $("[data-it-btn='prev']");
 var btnNext = $("[data-it-btn='next']");
 var btnSend = $("[data-it-btn='send']");
 var calcTitle = $("[data-calculation-title]");
-var calcSubTitle = $("[data-it-calculation-text]");
+
 
 function calculation() {
 
-    $("[data-it-calculation-counter]").text(stepCounter);
-
     $("[data-it-calculation-item]").hide();
     $("[data-it-calculation-item='" + stepCounter + "']").show();
-
-
+    var dotLine = $("[data-dot-line='" + stepCounter + "']");
+    var calculationText = $("[data-calculation-text='" + stepCounter + "']");
+    console.log(calculationText);
     switch (stepCounter) {
         case 1:
-            calcSubTitle.text("Выберите материал для строительства");
-            lineInner.css("width", "25%");
             btnPrev.removeClass("active");
+            dotLine.next().removeClass("active");
+            calculationText.next().removeClass("active");
+            calculationText.parent().next().find("[data-calculation-text]").removeClass("active");
             break;
         case 2:
-            calcSubTitle.text("Расскажите, какая степень постройки вас интересует");
-            lineInner.css("width", "50%");
             btnPrev.addClass("active");
-            break;
-
-        case 3:
-            calcSubTitle.text("Что бы вы хотели добавить к проекту?");
-            calcTitle.text("Уточните комплектацию для расчета стоимости дома:");
-            lineInner.css("width", "75%");
-            btnPrev.addClass("active");
-            btnNext.addClass("active");
             btnSend.removeClass("active");
+            btnNext.addClass("active");
+            dotLine.addClass("active");
+            dotLine.next().removeClass("active");
+            calculationText.addClass("active");
+            calculationText.parent().next().find("[data-calculation-text]").removeClass("active");
             break;
-
-        case 4:
-            calcSubTitle.text("После отправки заявки менеждер рассчитает, перезвонит и предложит варианты");
-            calcTitle.text("Укажите данные для отправки");
-            lineInner.css("width", "100%");
+        case 3:
             btnNext.removeClass("active");
+            btnPrev.addClass("active");
             btnSend.addClass("active");
+            dotLine.addClass("active");
+            calculationText.addClass("active");
             break;
+        case 4:
     }
 }
 
@@ -229,12 +220,10 @@ btnNext.on("click", function (e) {
     });
 
     if (!$(".it-validate-error").hasClass("active")) {
-
         stepCounter++;
         calculation();
     }
 });
-
 
 btnPrev.on("click", function (e) {
     stepCounter--;
@@ -242,30 +231,32 @@ btnPrev.on("click", function (e) {
 });
 
 
-var calcSelectWrap = $(".it-steps__inner-half:has(.it-steps__checkbox +.it-steps__select-wrap)");
+/* ------------------- протестить когда выкачу на сервер ----------------------- */
 
-calcSelectWrap.find(".it-checkbox__default").on("click", function () {
+btnSend.on("click", function (e) {
 
-    var thisCalcSelectWrap = $(this).closest(calcSelectWrap);
-    var thisCalcSelect = thisCalcSelectWrap.find(".it-steps__select");
+    if ($(this).closest($("form.success"))) {
+        lineInner.css("width", "100%")
 
-    if (thisCalcSelect.attr("disabled")) {
-        thisCalcSelect.removeAttr("disabled");
-    } else {
-        thisCalcSelect.attr("disabled", "1");
     }
+
 });
+
+
+
+
+
 
 
 /* ****************************** add-file ****************************** */
 
-$(".it-callback__file-drop").change(function () {
+$("[data-file-default]").change(function () {
     var f_name = [];
 
     for (var i = 0; i < $(this).get(0).files.length; ++i) {
         f_name.push(' ' + $(this).get(0).files[i].name);
     }
 
-    $(this).parent().find(".it-callback__file-drop-name").text(f_name.join(', '));
+    $(this).parent().find("[data-file-name]").text(f_name.join(', '));
 });
 

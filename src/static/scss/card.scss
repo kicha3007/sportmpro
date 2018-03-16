@@ -2,6 +2,10 @@
 @import "__mixins";
 @import "smart-grid";
 
+.it-card {
+  margin-bottom: 65px;
+}
+
 .it-card__top {
   @include row-flex();
 }
@@ -19,12 +23,11 @@
   @include size(6);
   @include size-sm(12);
   border: 1px solid red;
-  padding-top: 5px;
 }
 
 .it-card__img-box {
   max-width: 361px;
-  width: 1005px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,7 +38,7 @@
 }
 
 .it-card__img {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
   display: block;
 }
@@ -228,6 +231,36 @@
   color: #9FA3B0;
 }
 
+.it-card .it-card__btn--all-transparent {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #E31E24;
+}
+
+.it-card .it-card__btn--all-transparent:hover {
+  color: #E31E24;
+	text-decoration: none;
+}
+
+.it-card .it-card__btn--all-transparent:active,
+.it-card .it-card__btn--all-transparent:visited {
+  color: #E31E24;
+	text-decoration: none;
+}
+
+.it-card__buttons-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px -10px;
+}
+
+.it-card__buttons {
+  max-width: 165px;
+  width: 100%;
+  margin: 0 5px 10px;
+}
+
 /******************* checkbox *******************/
 
 .it-card__model-checkbox {
@@ -268,7 +301,6 @@
   display: block;
   width: 100%;
   height: 100%;
-
   cursor: pointer;
 
 }

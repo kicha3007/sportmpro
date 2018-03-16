@@ -2,420 +2,159 @@
 section.it-steps
 		.it-steps__wrap
 			.it-steps__title(data-calculation-title)
-				| Уточните комплектацию для расчета стоимости дома:
+				b
+					|	Добавьте деталей: &#32;
+				|	расскажите о том, что вам нужно!
 			.it-steps__item
-				.it-steps__step
-					| Шаг &#32;
-					span.it-steps__step-number(data-it-calculation-counter='') 1
-					|:
-					span.it-steps__step-text(data-it-calculation-text='') Выберите материал для строительства
+				.it-steps__step-wrap
+					.it-steps__step-inner-wrap
+						.it-steps__step-number
+							|	1
+						.it-steps__step-text.active(data-calculation-text='1')
+							|	Выбор
+							br
+							|	логотипа
+					.it-steps__step-inner-wrap
+						.it-steps__step-number
+							|	2
+						.it-steps__step-text(data-calculation-text='2')
+							|	Выбор
+							br
+							|	модели
+					.it-steps__step-inner-wrap.it-steps__step-inner-wrap--size
+						.it-steps__step-number
+							|	3
+						.it-steps__step-text(data-calculation-text='3')
+							|    Отправка
+							br
+							| заявки
 				.it-steps__step-line
 					.it-steps__line-inner(data-it-line-inner='')
+					.it-steps__line-dot.active.it-steps__line-dot--one(data-dot-line="1")
+					.it-steps__line-dot.it-steps__line-dot--two(data-dot-line="2")
+					.it-steps__line-dot.it-steps__line-dot--three(data-dot-line="3")
 				form.it-steps__form.it-form--hide(action='/sendCallBack.php', data-it-form='')
 					ul.it-steps__inner-wrap
 						li.it-steps__inner-item(data-it-calculation-item='1')
-							ul.it-steps__inner-list
-								li.it-steps__half
-									.it-checkbox.it-steps__checkbox
-										label.it-checkbox
-											input.it-checkbox__default(type="radio"  name="материал" checked)
-											span.it-checkbox__pseudo
-											span.it-checkbox__text
-												|	Клееный брус
-									.it-steps__img-box
-										img(src="static/img/steps/1.png", alt='').it-steps__img
-								li.it-steps__half
-									.it-checkbox.it-steps__checkbox
-										label.it-checkbox
-											input.it-checkbox__default(type="radio"  name="материал" )
-											span.it-checkbox__pseudo
-											span.it-checkbox__text
-												|    Сухой проф.брус
-									.it-steps__img-box
-										img(src="static/img/steps/2.png", alt='').it-steps__img
+							.it-steps__item-wrap
+								.it-steps__item-half
+									.it-steps__item-half-title
+										|	Способ нанесения  логотипа:
+									.it-steps__select-wrap
+										select.it-steps__select(name='fuel', required='' )
+											option(value='Сублимационная печать', selected='', )
+												| Газовый котел
+											option(value='Электрический котел')
+												| Электрический котел
+											option(value='Пеллетный котел')
+												| Пеллетный котел
+								.it-steps__item-half.it-steps__item-half-file
+									.it-steps__item-half-title
+										|    Загрузите логотип:
+									label.it-callback__file-label.it-steps__file-label
+										input.it-callback__file#add_file(name='file', type='file' data-file-default)
+										span.it-callback__file-title.it-steps__file-title.it-btn.it-btn--transparent Прикрепить
+								.it-steps__item-half
+									.it-steps__item-half-title
+										|    Понадобятся ли вам нашивки?
+									.it-steps__select-wrap.it-steps__select-wrap--size
+										select.it-steps__select.it-steps__select--size(name='fuel', required='' )
+											option(value='Да', selected='', )
+												| Да
+											option(value='Электрический котел')
+												| Нет
+
 								.it-validate-error
 									| Заполните поля
 						li.it-steps__inner-item(data-it-calculation-item='2')
-							ul.it-steps__inner-list
-								li.it-steps__half.it-steps__half--size2
-									.it-steps__inner-half
-										.it-steps__img-box.it-steps__img-box--min
-											img(src="static/img/steps/3.png", alt='').it-steps__img
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="radio"  name="степень постройки" checked)
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Дом под ключ
-								li.it-steps__half.it-steps__half--size2
-									.it-steps__inner-half
-										.it-steps__img-box.it-steps__img-box--min
-											img(src="static/img/steps/4.png", alt='').it-steps__img
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="radio"  name="степень постройки" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|   Дом под кровлю
-								li.it-steps__half.it-steps__half--size2
-									.it-steps__inner-half
-										.it-steps__img-box.it-steps__img-box--min
-											img(src="static/img/steps/5.png", alt='').it-steps__img
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="radio"  name="степень постройки")
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Теплый контур
-								li.it-steps__half.it-steps__half--size2
-									.it-steps__inner-half
-										.it-steps__img-box.it-steps__img-box--min
-											img(src="static/img/steps/6.png", alt='').it-steps__img
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="radio"  name="степень постройки" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Стенокомплект
-
-
-
-
-
+							.it-steps__item-wrap
+								.it-steps__item-half.it-steps__item-half--size2
+									.it-steps__item-half-title
+										|    Выберите тип ворота:
+									ul.it-steps__model-list
+										li.it-steps__model-item
+											label.it-steps__model-checkbox
+												input.it-steps__model-checkbox-default(type="radio" name="model1" checked)
+												.it-steps__model-checkbox-pseudo
+													img(src="static/img/steps/1.png", alt='').it-steps__model-checkbox-img
+										li.it-steps__model-item
+											label.it-steps__model-checkbox
+												input.it-steps__model-checkbox-default(type="radio" name="model1" )
+												.it-steps__model-checkbox-pseudo
+													img(src="static/img/steps/2.png", alt='').it-steps__model-checkbox-img
+										li.it-steps__model-item
+											label.it-steps__model-checkbox
+												input.it-steps__model-checkbox-default(type="radio" name="model1" )
+												.it-steps__model-checkbox-pseudo
+													img(src="static/img/steps/3.png", alt='').it-steps__model-checkbox-img
+										li.it-steps__model-item
+											label.it-steps__model-checkbox
+												input.it-steps__model-checkbox-default(type="radio" name="model1" )
+												.it-steps__model-checkbox-pseudo
+													img(src="static/img/steps/4.png", alt='').it-steps__model-checkbox-img
+								.it-steps__item-half.it-steps__item-half--size3
+									.it-steps__item-half-title
+										|    Выберите тип подола:
+									.it-steps__select-wrap
+										select.it-steps__select(name='fuel', required='' )
+											option(value='Нужен длинный низ', selected='', )
+												| Нужен длинный низ
+											option(value='Электрический котел')
+												| Электрический котел
+											option(value='Пеллетный котел')
+												| Пеллетный котел
 						li.it-steps__inner-item(data-it-calculation-item='3')
-							ul.it-steps__inner-list.it-steps__inner-wrap--column
-								li.it-steps__half.it-steps__half--size3
-									.it-steps__half-title
-										|	Инженерные системы
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
+							.it-steps__outer-wrap
+								.it-steps__inner-item-top
+									.it-steps__item-half.it-steps__item-half.it-steps__item-half--size4
+										.it-steps__item-half-title
+											|    Внесите ваши контакты:
+										input.it-steps__input(type="text" name='NAME', maxlength='200', value='', placeholder='Ваше имя', required)
+										input.it-steps__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required, data-mask='phone')
+									.it-steps__item-half.it-steps__item-half--size4
+										.it-steps__item-half-title
+											|    Вам понадобятся дополнительно?
+										.it-steps__checkbox-wrap
 											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Электрика
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
+												input.it-steps__checkbox-default(type="checkbox" name="AGREE" )
+												span.it-steps__checkbox-pseudo
+												span.it-steps__checkbox-text
+													|    Гамаши
+										.it-steps__checkbox-wrap
 											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Сантехника
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
+												input.it-steps__checkbox-default(type="checkbox" name="AGREE" )
+												span.it-steps__checkbox-pseudo
+												span.it-steps__checkbox-text
+													|    Рейтузы
+										.it-steps__checkbox-wrap
 											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Канализация и водопровод (водоподведение и водоотведение)
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Отопление
-										.it-steps__select-wrap
-											select.it-steps__select(name='fuel', required='' disabled="")
-												option(value='Газовый котел', selected='', )
-													| Газовый котел
-												option(value='Электрический котел')
-													| Электрический котел
-												option(value='Пеллетный котел')
-													| Пеллетный котел
-								li.it-steps__half.it-steps__half--size3
-									.it-steps__half-title
-										|    Зона СПА
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Сауна
-										.it-steps__select-wrap
-											select.it-steps__select(name='fuel', required='' disabled="")
-												option(value='Финская', selected='', )
-													| Финская
-												option(value='Инфракрасная')
-													| Инфракрасная
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Джакузи
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Бассейн
-										.it-steps__select-wrap
-											select.it-steps__select(name='fuel', required='' disabled="")
-												option(value='Закрытый бассейн', selected='', )
-													| Закрытый бассейн
-												option(value='Взрослый бассейн')
-													| Взрослый бассейн
-												option(value='Детский бассейн')
-													| Детский бассейн
-								li.it-steps__half.it-steps__half--size3
-									.it-steps__half-title
-										|    Специализированные помещения
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Мастерская
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Бильярдная
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Тренажерный зал
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Домашний кинотеатр
+												input.it-steps__checkbox-default(type="checkbox" name="AGREE" )
+												span.it-steps__checkbox-pseudo
+												span.it-steps__checkbox-text
+													|    Тренировочная форма
 
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Винный погреб
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Гардеробная
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Прачечная
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Помещение для животных
-
-								li.it-steps__half.it-steps__half--size3
-									.it-steps__half-title
-										|    Интерьерные решения
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Балкон
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Печь
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Камин
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Лестница
-										.it-steps__select-wrap
-											select.it-steps__select(name='fuel', required='' disabled="")
-												option(value='Винтовая', selected='', )
-													| Винтовая
-												option(value='Маршевая')
-													| Маршевая
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Терраса
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Второй свет
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Зимний сад
-								li.it-steps__half.it-steps__half--size3
-									.it-steps__half-title
-										|    Окна
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Мансардные окна
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Витражные окна
-								li.it-steps__half.it-steps__half--size3
-									.it-steps__half-title
-										|    Благоустройство участка
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Гараж
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Забор
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Беседка
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Барбекю
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Искусственный пруд
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Баня
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|   Домик для детей
-
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Детская площадка
-									.it-steps__inner-half
-										.it-checkbox.it-steps__checkbox
-											label.it-checkbox
-												input.it-checkbox__default(type="checkbox" name="AGREE" )
-												span.it-checkbox__pseudo
-												span.it-checkbox__text
-													|    Конюшня
+								.it-steps__inner-item-bottom
+									textarea.it-steps__textarea
+										|	Комментарий
+									.it-steps__checkbox-wrap.it-steps__checkbox-wrap--indent
+										label.it-checkbox
+											input.it-steps__checkbox-default(type="checkbox" name="AGREE" checked)
+											span.it-steps__checkbox-pseudo.it-steps__checkbox-pseudo--size
+											span.it-steps__checkbox-text.it-steps__checkbox-text--color
+												|    Подтверждаю свое согласие на
+												br
+												|     обработку персональных данных
 
 
 
-
-
-
-
-
-						li.it-steps__inner-item(data-it-calculation-item='4')
-							.it-callback__input-wrap
-								.it-callback__half
-									.it-callback__input-title
-										|	Ваше имя
-									input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Иван', required)
-								.it-callback__half
-									.it-callback__input-title
-										|    Ваш телефон
-									input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='+ 7 (999) 999-99-99', data-phone='true', required, data-mask='phone')
-								.it-callback__half
-									.it-callback__input-title
-										|    Электронная почта
-									input.it-callback__input(type='mail', name='mail', maxlength='200', value='', placeholder='abc@mail.ru', )
+						.it-steps__buttons
+							button.it-btn.it-steps__btn.it-steps__btn--prev(type='button', data-it-btn='prev')
+								| Назад
+								button.it-btn.it-steps__btn.it-steps__btn--next.it-btn--arrow.active(type='button', data-it-btn='next')
+									| Далее
+									img(src="static/img/arrow.png", alt='').it-btn--arrow
+								button.it-btn.it-steps__btn.it-steps__btn--send(type='submit', data-it-btn='send')
+									| Отправить
 							.it-form__success
-								| Спасибо!
-								br
-								|  Ваша заявка принята.
-
-							.it-checkbox-wrap.it-callback__checkbox-wrap.it-steps__checkbox-wrap
-								label.it-checkbox
-									input.it-checkbox__default(type="checkbox" name="AGREE" checked)
-									span.it-checkbox__pseudo
-									span.it-checkbox__text Подтверждаю свое согласие на обработку персональных данных
-
-
-
-
-					.it-steps__buttons
-						button.it-btn.it-steps__btn.it-steps__btn--prev(type='button', data-it-btn='prev')
-							| Назад
-						button.it-btn.it-steps__btn.it-steps__btn--next.it-btn--arrow.active(type='button', data-it-btn='next')
-							| Далее
-							img(src="static/img/arrow.png", alt='').it-btn--arrow
-						button.it-btn.it-steps__btn.it-steps__btn--send(type='submit', data-it-btn='send')
-							| Отправить
-					.it-form__success
-						p Спасибо!
-						p Ваша заявка принята
+								p Спасибо!
+								p Ваша заявка принята

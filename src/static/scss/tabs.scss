@@ -1,3 +1,122 @@
 @import "__vars";
 @import "__mixins";
 @import "smart-grid";
+
+/******************* tabs *******************/
+
+
+.it-tabs__nav-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  position: relative;
+  margin: 0 0 -10px;
+}
+
+.it-tabs__nav-item {
+  list-style-type: none;
+  padding-left: 0;
+  transform: skewX(-50deg);
+  background-color: #EDEDED;
+  max-width: 236px;
+  width: 31%;
+  margin: 0 6px 10px;
+}
+
+.it-tabs__nav-link {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.it-tabs__nav-link span {
+  transform: skew(50deg);
+  display: inline-block;
+}
+
+.it-tabs__nav-link:hover {
+    color: #333333;
+	text-decoration: none;
+}
+
+.it-tabs__nav-link:active,
+.it-tabs__nav-link:visited {
+    color: #333333;
+	text-decoration: none;
+}
+
+.it-tabs__nav-item.active .it-tabs__nav-link {
+  background-color: $main-color;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.it-tabs__nav-item.active .it-tabs__inner-text {
+  color: #ffffff;
+}
+
+.it-tabs__list {
+  margin: 0;
+  padding: 0;
+}
+
+.it-tabs__item {
+  padding: 30px 20px 0;
+  list-style-type: none;
+}
+
+.it-tabs__item:not(.active ) {
+  display: none;
+}
+
+.it-tabs__content ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.it-tabs__content ul li {
+  list-style-type: none;
+  padding-left: 38px;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+}
+
+.it-tabs__content ul li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 24px;
+  height: 15px;
+  background: url(../img/tabs/arrow.png) no-repeat center;
+
+}
+
+.it-tabs__content p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #333333;
+}
+
+.it-tabs__content a {
+  color: $main-color;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.it-tabs__content  ul li p,
+.it-tabs__content  ul li img {
+  margin-left: -38px;
+}
+

@@ -47,6 +47,9 @@ body * {
   margin: 0 auto;
 }
 
+.it-container * {
+  box-sizing: border-box;
+}
 
 
 //.it-container--big {
@@ -68,6 +71,7 @@ body * {
   font-weight: 700;
   position: relative;
   color: #000000;
+  margin: 0;
   @include tablets {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -132,6 +136,10 @@ body * {
   overflow: hidden;
 }
 
+.it-main-page__wrapper * {
+  box-sizing: border-box;
+}
+
 .it-main-page__wrapper:after {
   content: "";
   display: block;
@@ -155,7 +163,6 @@ body * {
   @include col();
   @include size(3);
   @include size-sm(12);
-  background: yellow;
 }
 
 
@@ -177,8 +184,13 @@ body * {
   text-transform: none;
   cursor: pointer;
   text-decoration: none;
+  border-radius: 5px;
+  position: relative;
 }
 
+.it-btn:hover {
+  background: $main-color-hover;
+}
 
 .it-btn:hover,
 .it-btn:active,
@@ -191,11 +203,14 @@ body * {
   background-color: transparent;
   color: #000000;
   border: 1px solid $main-color;
+
+
 }
 
 .it-btn--transparent:hover {
   border: 1px solid $main-color-hover;
   color: #000000;
+  background: transparent;
 }
 
 .it-btn--transparent:hover,
