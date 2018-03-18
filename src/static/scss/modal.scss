@@ -11,7 +11,7 @@
   display: none;
   background: #ffffff;
   padding: 0;
-  width: 560px;
+  width: 516px;
 }
 
 .it-modal__wrap {
@@ -54,7 +54,7 @@
 }
 
 .it-modal__content {
-  padding: 65px 30px;
+  padding: 40px 35px;
   text-align: left;
 }
 
@@ -79,14 +79,20 @@
 
 .it-modal__input {
   width: 100%;
-  padding: 17px 20px ;
+  padding: 10px 20px ;
   height: auto ;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   border-radius: 5px ;
   box-sizing: border-box;
   font-size: 0.81rem;
   font-weight: 300;
   border: 1px solid rgba(80, 66, 66, 0.2);
+}
+
+.it-modal__input--textarea {
+  resize: vertical;
+  min-height: 128px;
+  margin-bottom: 20px;
 }
 
 .it-modal__input--indent {
@@ -135,45 +141,154 @@
   pointer-events: none;
 }
 
-.it-modal__checkbox-wrap {
-  margin-bottom: 40px;
-}
 
 .it-modal .it-modal__btn {
-  font-size: 1.13rem;
+  font-size: rem(20px);
+  font-weight: 700;
 }
 
-.it-modal__checkbox__pseudo {
-  border: 1px solid rgba(80, 66, 66, 0.5);
-  border-radius: 2px;
-}
-
-.it-modal__checkbox__text {
-  font-size: 0.88rem;
-  color: rgba(51, 51, 51, 1);
-}
 
 .fancybox-close {
   position: absolute;
-  background-image: url("../img/modal/close.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 15px;
-  height: 15px;
-  top: 20px;
+  top: 15px;
   right: 20px;
-  padding: 15px;
   z-index: 10000;
-  background-size: 90%;
+  background: transparent;
+}
+
+.fancybox-close:hover {
+  opacity: 0.7;
+}
+
+
+.fancybox-close:before, .fancybox-close:after {
+  content: ' ';
+  position: absolute;
+  left: 15px;
+  height: 20px;
+  width: 2px;
+  background-color: #000000;
+}
+.fancybox-close:before {
+  transform: rotate(45deg);
+}
+
+.fancybox-close:after {
+  transform: rotate(-45deg);
 }
 
 .it-modal__input-title {
   font-size: rem(14px);
   font-weight: 400;
-  color: rgba(92, 92, 92, 1);
+  color: #5C5C5C;
   margin-bottom: 10px;
 }
 
 .it-modal-policy {
   padding: 30px;
+}
+
+
+
+/******************* checkbox-form *******************/
+
+
+
+.it-modal__checkbox-wrap {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.it-modal__checkbox-wrap + .it-modal__checkbox-wrap {
+  margin-top: 16px;
+}
+
+.it-modal__checkbox-wrap--indent {
+  margin-bottom: 15px;
+}
+
+.it-modal__checkbox {
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  position: relative;
+
+}
+
+.it-modal__checkbox-default {
+  width: .1px;
+  height: .1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0!important;
+  outline: 0!important;
+  background-color: transparent;
+}
+
+.it-modal__checkbox-pseudo,
+.it-modal__checkbox-pseudo:before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.it-modal__checkbox-pseudo {
+  background-color: #fff;
+  border: 1px solid rgba(80,66,66,.2);
+  margin-right: 20px;
+  position: relative;
+  left: 0;
+  top: 0;
+  line-height: 17px;
+}
+
+
+.it-modal__checkbox-pseudo:before {
+  content: '\002714';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  top: 0;
+  left: -1px;
+  text-align: center;
+  font-size: 16px;
+  color: $main-color;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -ms-transform: scale(.4);
+  -webkit-transform: scale(.4);
+  transform: scale(.4);
+  -webkit-transition: all .225s ease-in-out;
+  -o-transition: all .225s ease-in-out;
+  transition: all .225s ease-in-out;
+  cursor: pointer;
+}
+
+.it-modal__checkbox-default:checked+.it-modal__checkbox-pseudo:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.it-modal__checkbox-text {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 300;
+  -ms-flex-preferred-size: 80px;
+  flex-basis: 75px;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+
 }

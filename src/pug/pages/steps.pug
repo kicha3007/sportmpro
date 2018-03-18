@@ -1,5 +1,5 @@
 // --------------------- it-steps -------------------------
-section.it-steps
+section.it-steps.it-all--indent
 		.it-steps__wrap
 			.it-steps__title(data-calculation-title)
 				b
@@ -134,8 +134,7 @@ section.it-steps
 													|    Тренировочная форма
 
 								.it-steps__inner-item-bottom
-									textarea.it-steps__textarea
-										|	Комментарий
+									textarea.it-steps__textarea(name="комментарий" placeholder="Комментарий" maxlength="1000")
 									.it-steps__checkbox-wrap.it-steps__checkbox-wrap--indent
 										label.it-checkbox
 											input.it-steps__checkbox-default(type="checkbox" name="AGREE" checked)

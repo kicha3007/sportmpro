@@ -176,11 +176,11 @@ function calculation() {
     $("[data-it-calculation-item='" + stepCounter + "']").show();
     var dotLine = $("[data-dot-line='" + stepCounter + "']");
     var calculationText = $("[data-calculation-text='" + stepCounter + "']");
-    console.log(calculationText);
     switch (stepCounter) {
         case 1:
             btnPrev.removeClass("active");
             dotLine.next().removeClass("active");
+            calculationText.addClass("active");
             calculationText.next().removeClass("active");
             calculationText.parent().next().find("[data-calculation-text]").removeClass("active");
             break;
@@ -192,6 +192,7 @@ function calculation() {
             dotLine.next().removeClass("active");
             calculationText.addClass("active");
             calculationText.parent().next().find("[data-calculation-text]").removeClass("active");
+            calculationText.parent().prev().find("[data-calculation-text]").removeClass("active");
             break;
         case 3:
             btnNext.removeClass("active");
@@ -199,6 +200,7 @@ function calculation() {
             btnSend.addClass("active");
             dotLine.addClass("active");
             calculationText.addClass("active");
+            calculationText.parent().prev().find("[data-calculation-text]").removeClass("active");
             break;
         case 4:
     }

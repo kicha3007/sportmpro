@@ -1,3 +1,86 @@
 @import "__vars";
 @import "__mixins";
 @import "smart-grid";
+
+.about-us__wrap {
+  border: 10px solid rgba(0, 0, 0, 0.05);
+  padding: 40px 40px;
+}
+
+.about-us__title {
+  font-weight: 700;
+  font-size: rem(18px);
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-us__list {
+  padding: 0;
+  margin: 0;
+  @include row-flex();
+  justify-content: space-between;
+}
+
+.about-us__item {
+  @include col();
+  @include size(4);
+  @include size-xs(12);
+  position: relative;
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+
+}
+
+.about-us__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 22px;
+    top: 0;
+    right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  @include phones {
+    display: none;
+  }
+}
+
+.about-us__item:last-child:before {
+  display: none;
+}
+
+.about-us__content {
+  @include phones {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+
+.about-us__numeric {
+  margin-bottom: 15px;
+}
+
+.about-us__numeric span {
+  color:#E31E24;
+  font-weight: 700;
+}
+
+.about-us__numeric-number {
+  font-size: rem(36px);
+}
+
+.about-us__numeric-text {
+  font-size: rem(24px);
+}
+
+.about-us__desc {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+}

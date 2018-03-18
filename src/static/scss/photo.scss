@@ -1,3 +1,75 @@
 @import "__vars";
 @import "__mixins";
 @import "smart-grid";
+
+.it-photo {
+}
+
+.it-photo__wrap {
+}
+
+.it-photo__half {
+  max-width: 804px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.it-photo__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/******************* photo+owl *******************/
+
+
+.it-photo .box-carousel .owl-nav .owl-next,.it-photo .box-carousel .owl-nav .owl-prev {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  top: 50%;
+  margin-top: -33px;
+  font-size: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.it-photo .box-carousel .owl-nav .owl-next:hover,.it-photo .box-carousel .owl-nav .owl-prev:hover {
+  opacity: .5
+}
+
+.it-photo .box-carousel .owl-nav .owl-prev {
+  left: -27px;
+}
+
+.it-photo .box-carousel .owl-nav .owl-next {
+  right: -27px;
+  border-left: none;
+}
+
+.it-photo .box-carousel .owl-nav .owl-next:after,.it-photo .box-carousel .owl-nav .owl-prev:after {
+  content: "";
+
+  width: 16px;
+  height: 34px;
+
+  background: url("../img/partners/arrow.png") center no-repeat;
+}
+
+.it-photo .box-carousel .owl-nav .owl-prev:after {
+  transform: scale(-1);
+  margin-left: 2px;
+}
+
+.it-photo .box-carousel .owl-nav .owl-next:after {
+  transform: scale(1);
+  margin-right: 2px;
+}
+

@@ -13,6 +13,35 @@
     <div class="it-main-page__wrapper">
       <div class="it-main-page__content">
         <div class="it-container">
+          <header class="it-header">
+            <div class="it-header__wrap">
+              <div class="it-header__inner-wrap">
+                <div class="it-header__column it-header__column--1"><a class="it-logo" href="#">
+                    <div class="it-logo__img-box"><img class="it-logo__img" src="static/img/header/logo.png" alt=""></div></a></div>
+                <div class="it-header__column it-header__column--2">
+                  <div class="it-location">
+                    <div class="it-location__text it-location__text--city">  г. Тюмень,</div>
+                    <div class="it-location__text it-location__text--adress">  ул. Бакинских Комиссаров, д.4</div>
+                  </div>
+                </div>
+                <div class="it-header__column it-header__column--3">
+                  <div class="it-header__phone-wrap"><a class="it-phone" href="tel:+73452499-522"><span class="it-phone__img-wrap"><img class="it-phone__img" src="static/img/header/phone/1.png" alt=""></span>+7 (3452)<b>565-292</b></a></div>
+                </div>
+                <div class="it-header__column it-header__column--4">
+                  <div class="it-header__buttons"><a class="it-btn it-btn--transparent it-header__btn" href="#it-modal1" data-modal="">Заказать звонок</a></div>
+                </div>
+                <div class="it-header__column it-header__column--5">
+                  <div class="it-desc">Производство и продажа формы<br>для профессионального и любительского спорта</div>
+                </div>
+                <div class="it-header__column it-header__column--6">
+                  <form class="it-search js-validate search-form" action="/" method="get">
+                    <input class="it-search__input form-control" tabindex="1" name="s" placeholder="Поиск">
+                    <button class="it-search__btn"><img src="static/img/header/search/1.png" alt=""></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </header>
           <div class="it-main-page__top">
             <div class="it-main-page__left">
               <section class="it-card">
@@ -87,7 +116,7 @@
                             <div class="it-card__all-price-number">от &#32;<span class="it-card__all-price-value">00 000 &#32;</span>руб.*</div>
                           </div>
                           <div class="it-card__buttons-wrap">
-                            <div class="it-card__buttons"><a class="it-btn it-card__btn">	Оформить заказ</a></div>
+                            <div class="it-card__buttons"><a class="it-btn it-card__btn" href="#it-modal1" data-modal>	Оформить заказ</a></div>
                             <div class="it-card__buttons"><a class="it-btn it-card__btn it-card__btn--all-transparent">	Добавить деталей к заказу</a></div>
                           </div>
                         </div>
@@ -249,7 +278,7 @@
                 </div>
               </section>
               <!-- --------------------- it-steps --------------------------->
-              <section class="it-steps">
+              <section class="it-steps it-all--indent">
                 <div class="it-steps__wrap">
                   <div class="it-steps__title" data-calculation-title><b>	Добавьте деталей: &#32;</b>	расскажите о том, что вам нужно!</div>
                   <div class="it-steps__item">
@@ -376,7 +405,7 @@
                               </div>
                             </div>
                             <div class="it-steps__inner-item-bottom">
-                              <textarea class="it-steps__textarea">	Комментарий</textarea>
+                              <textarea class="it-steps__textarea" name="комментарий" placeholder="Комментарий" maxlength="1000"></textarea>
                               <div class="it-steps__checkbox-wrap it-steps__checkbox-wrap--indent">
                                 <label class="it-checkbox">
                                   <input class="it-steps__checkbox-default" type="checkbox" name="AGREE" checked><span class="it-steps__checkbox-pseudo it-steps__checkbox-pseudo--size"></span><span class="it-steps__checkbox-text it-steps__checkbox-text--color">   Подтверждаю свое согласие на<br>    обработку персональных данных</span>
@@ -398,6 +427,38 @@
                       </ul>
                     </form>
                   </div>
+                </div>
+              </section>
+              <section class="about-us">
+                <div class="about-us__wrap">
+                  <div class="about-us__title">  О нас в цифрах</div>
+                  <ul class="about-us__list">
+                    <li class="about-us__item">
+                      <div class="about-us__content">
+                        <div class="about-us__numeric"><span class="about-us__numeric-number">  13</span><span class="about-us__numeric-text">  лет</span></div>
+                        <div class="about-us__desc">  на рынке производства спортивной одежды</div>
+                      </div>
+                    </li>
+                    <li class="about-us__item">
+                      <div class="about-us__content">
+                        <div class="about-us__numeric"><span class="about-us__numeric-number">  60 +</span></div>
+                        <div class="about-us__desc">  сотрудников на<br>  производстве</div>
+                      </div>
+                    </li>
+                    <li class="about-us__item">
+                      <div class="about-us__content">
+                        <div class="about-us__numeric"><span class="about-us__numeric-number">  1</span><span class="about-us__numeric-text">  миллион</span></div>
+                        <div class="about-us__desc">  Пошито курток<br>за годы работы</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="it-photo it-all--indent">
+                <div class="it-all-title">	Нашими услугами уже воспользовались</div>
+                <div class="it-photo__wrap owl-carousel box-carousel">
+                  <div class="it-photo__half"><img class="it-photo__img" src="static/img/photo/1.jpg" alt=""></div>
+                  <div class="it-photo__half"><img class="it-photo__img" src="static/img/photo/1.jpg" alt=""></div>
                 </div>
               </section>
               <section class="it-callback it-all--indent">
@@ -458,7 +519,7 @@
                         <div class="other-progects__person-content">
                           <div class="other-progects__person-title">   Инвентарь для хоккея</div>
                           <div class="other-progects__person-subtitle">	Более 580 товаров</div>
-                          <div class="other-progects__person-buttons"><a class="other-progects__person-btn it-btn it-btn--transparent" href="#">	Узнать подробнее</a></div>
+                          <div class="other-progects__person-buttons"><a class="other-progects__person-btn it-btn it-btn--transparent" href="/catalogue/inventar/hokkey/">	Узнать подробнее</a></div>
                         </div>
                       </li>
                     </ul>
@@ -466,6 +527,174 @@
                 </div>
               </aside>
             </aside>
+          </div>
+          <!-- --------------------- it-modal --------------------------->
+          <section class="it-modal" id="it-modal1">
+            <div class="it-modal__wrap">
+              <div class="it-modal__header">
+                <div class="it-modal__img-box"><img class="it-modal__img" src="static/img/modal/1.png" alt=""></div>
+                <div class="it-modal__header-content">
+                  <div class="it-modal__title">Обратный звонок</div>
+                  <div class="it-modal__subtitle">Оставьте контактные данные,<br>и мы вам перезвоним!</div>
+                </div>
+              </div>
+              <div class="it-modal__content">
+                <form class="it-modal__form it-form--hide" action="/sendCallBack.php" method="POST" data-it-form>
+                  <input type="hidden" name="FORM_HEADER" value="Узнать стоимость квартиры">
+                  <div class="it-modal__input-wrap">
+                    <label class="it-modal__input-inner-wrap">
+                      <div class="it-modal__input-title">Ваше имя:</div>
+                      <input class="it-modal__input" name="NAME" maxlength="200" value="" placeholder="Иван" required="">
+                    </label>
+                    <label class="it-modal__input-inner-wrap">
+                      <div class="it-modal__input-title">Телефон:</div>
+                      <input class="it-modal__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="+7 (999) 999-99-99" data-phone="true" required="" data-mask="phone">
+                    </label>
+                    <label class="it-modal__input-inner-wrap">
+                      <div class="it-modal__input-title">	Комментарий:</div>
+                      <textarea class="it-modal__input it-modal__input--textarea" name="комментарий" maxlength="1000" placeholder="Комментарий"></textarea>
+                    </label>
+                    <div class="it-modal__checkbox-wrap">
+                      <label class="it-modal__checkbox">
+                        <input class="it-modal__checkbox-default" type="checkbox" name="AGREE" checked="" required=""><span class="it-modal__checkbox-pseudo"></span><span class="it-modal__checkbox-text">Я согласен с Политикой конфеденциальности</span>
+                      </label>
+                    </div>
+                    <div class="it-modal__buttons">
+                      <button class="it-btn it-modal__btn" type="submit">Отправить</button>
+                    </div>
+                    <input type="hidden" value="modal-form" name="FORM_NAME">
+                    <input type="hidden" name="NAME">
+                    <input type="hidden" name="PHONE">
+                  </div>
+                  <div class="it-form__success">Спасибо!<br> Ваша заявка принята.</div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <div class="it-modal-policy it-modal" id="it-modal-policy">
+            <div class="it-container">
+              <div class="it-modal-policy__wrap">
+                <div style="font-size:24px;font-family:'Roboto';" data-customstyle="yes">
+                  Политика
+                  обработки<br>персональных данных
+                </div>
+                <div style="font-size:14px;font-family:'Roboto';" data-customstyle="yes">
+                  Предоставляя
+                  свои
+                  персональные
+                  данные
+                  Пользователь
+                  даёт
+                  согласие на
+                  обработку,
+                  хранение и
+                  использование
+                  своих
+                  персональных
+                  данных на
+                  основании ФЗ №
+                  152-ФЗ «О
+                  персональных
+                  данных» от
+                  27.07.2006 г.
+                  в
+                  следующих
+                  целях:<br><br>
+                  <ul>
+                    <li>Осуществление клиентской поддержки</li>
+                    <li>Получения Пользователем информации о маркетинговых событиях</li>
+                    <li>
+                      Проведения аудита и прочих внутренних исследований с целью повышения
+                      качества
+                      предоставляемых услуг.
+                    </li>
+                  </ul>                                                                                                          Под
+                                                                                                                            персональными
+                                                                                                                            данными
+                                                                                                                            подразумевается
+                                                                                                                            любая
+                                                                                                                            информация
+                                                                                                                            личного
+                                                                                                                            характера,
+                                                                                                                            позволяющая
+                                                                                                                            установить
+                                                                                                                            личность
+                                                                                                                            Пользователя/Покупателя
+                                                                                                                            такая как:<br><br>
+                  <ul>
+                    <li>Фамилия, Имя, Отчество</li>
+                    <li>Дата рождения</li>
+                    <li>Контактный телефон</li>
+                    <li>Адрес электронной почты</li>
+                    <li>Почтовый адрес</li>
+                  </ul>                                                                                                          Персональные
+                                                                                                                            данные
+                                                                                                                            Пользователей
+                                                                                                                            хранятся
+                                                                                                                            исключительно
+                                                                                                                            на
+                                                                                                                            электронных
+                                                                                                                            носителях и
+                                                                                                                            обрабатываются
+                                                                                                                            с
+                                                                                                                            использованием
+                                                                                                                            автоматизированных
+                                                                                                                            систем, за
+                                                                                                                            исключением
+                                                                                                                            случаев, когда
+                                                                                                                            неавтоматизированная
+                                                                                                                            обработка
+                                                                                                                            персональных
+                                                                                                                            данных
+                                                                                                                            необходима
+                                                                                                                            в связи с
+                                                                                                                            исполнением
+                                                                                                                            требований
+                                                                                                                            законодательства.<br><br> Компания обязуется не передавать полученные персональные данные третьим
+                                                                                                                            лицам, за
+                                                                                                                            исключением
+                                                                                                                            следующих
+                                                                                                                            случаев:<br><br>
+                  <ol>
+                    <li>
+                      По запросам уполномоченных органов государственной власти РФ только по
+                      основаниям и в порядке, установленным законодательством РФ
+                    </li>
+                    <li>
+                      Стратегическим партнерам, которые работают с Компанией для предоставления
+                      продуктов и услуг, или тем из них, которые помогают Компании реализовывать
+                      продукты и услуги потребителям. Мы предоставляем третьим лицам минимальный
+                      объем
+                      персональных данных, необходимый только для оказания требуемой услуги или
+                      проведения необходимой транзакции.
+                    </li>
+                  </ol>                                                                                                          Компания
+                                                                                                                            оставляет
+                                                                                                                            за собой право
+                                                                                                                            вносить
+                                                                                                                            изменения
+                                                                                                                            в
+                                                                                                                            одностороннем
+                                                                                                                            порядке в
+                                                                                                                            настоящие
+                                                                                                                            правила,
+                                                                                                                            при условии,
+                                                                                                                            что
+                                                                                                                            изменения не
+                                                                                                                            противоречат
+                                                                                                                            действующему
+                                                                                                                            законодательству
+                                                                                                                            РФ. Изменения
+                                                                                                                            условий
+                                                                                                                            настоящих
+                                                                                                                            правил
+                                                                                                                            вступают в
+                                                                                                                            силу после их
+                                                                                                                            публикации на
+                                                                                                                            Сайте.<b></b>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -11,6 +11,7 @@
   padding: 0;
   position: relative;
   margin: 0 0 -10px;
+  justify-content: center;
 }
 
 .it-tabs__nav-item {
@@ -21,6 +22,9 @@
   max-width: 236px;
   width: 31%;
   margin: 0 6px 10px;
+  @include phones {
+    width: 62%;
+  }
 }
 
 .it-tabs__nav-link {

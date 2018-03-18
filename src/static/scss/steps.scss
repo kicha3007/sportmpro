@@ -10,11 +10,6 @@
   min-height: 420px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #EDEDED;
-  @include phones {
-    padding: 40px 0;
-    border-color: transparent;
-
-  }
 }
 
 
@@ -196,6 +191,9 @@
   width: 100%;
   padding-right: 30px;
   position: relative;
+  @include phones {
+    padding-right: 0;
+  }
 }
 
 .it-steps__step-inner-wrap--size {
@@ -232,8 +230,11 @@
 
 .it-steps__step-text {
   margin-left: 20px;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
+  @include phones {
+    width: 100%;
+  }
 }
 
 .it-steps__step-text.active {
@@ -293,7 +294,7 @@
 }
 
 .it-steps__item-half--size4 {
-  min-width: 254px;
+  max-width: 254px;
   width: 100%;
   margin: 0 30px 20px;
 }
@@ -428,11 +429,13 @@
 .it-steps__textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);;
   font-size: 14px;
-  padding: 15px 25px;
+  padding: 15px 15px;
   min-height: 110px;
   margin-bottom: 15px;
+  text-align: left;
+  resize: vertical;
 }
 
 
@@ -462,20 +465,40 @@
 
 
 .it-steps__input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .it-steps__input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .it-steps__input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .it-steps__input:-moz-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
 }
+
+.it-steps__textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.it-steps__textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.it-steps__textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.it-steps__textarea:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
 
 /******************* checkbox-form *******************/
 
@@ -589,9 +612,7 @@
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  @include phones {
-    word-wrap: break-word !important;
-  }
+
 }
 
 .it-steps__checkbox-text--color {
