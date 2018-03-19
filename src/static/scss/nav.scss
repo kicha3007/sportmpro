@@ -1,0 +1,43 @@
+@import "__vars";
+@import "__mixins";
+@import "smart-grid";
+
+
+.it-main-nav {
+  background-color: #EDEDED;
+}
+
+.it-main-nav__wrap> ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  width: 100%;
+}
+
+.it-main-nav__wrap ul> li {
+  display: inline-block;
+  position: relative;
+}
+
+
+.it-main-nav__wrap ul> li> a {
+  padding: 10px 10px;
+  display: block;
+  font-size: rem(18px);
+  font-weight: 300;
+  color: #333333;
+}
+
+.it-main-nav__wrap ul> li.hover> a {
+
+}
+
+.it-main-nav__wrap ul> li.active> a {
+
+}
+
+.it-main-nav__wrap ul> li> a> ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
