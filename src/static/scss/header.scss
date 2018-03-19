@@ -5,11 +5,11 @@
 /******************* it-header *******************/
 
 .it-header {
-  padding: 1% 0 5% 0;
-  overflow: hidden;
+  position: relative;
 }
 
 .it-header__wrap {
+  padding: 1% 0 5% 0;
   overflow: hidden;
 }
 
@@ -43,23 +43,39 @@
   flex-wrap: wrap;
   flex-grow: 1000;
   margin: 0 25px 20px;
+  @include phones {
+    margin-bottom: 10px;
+  }
+
 }
+
+.it-header__column--1 {
+  @include phones {
+    max-width: 110px;
+
+  }
+}
+
 
 .it-header__column--2 {
   max-width: 415px;
   flex-basis: 180px;
   flex-grow: 1000;
+  @include phones {
+    max-width: 122px;
+  }
 
 }
 
 .it-header__column--3 {
   max-width: 280px;
-  flex-basis: 220px;
+  flex-basis: 133px;
+
 }
 
 .it-header__column--4 {
   max-width: 195px;
-  flex-basis: 170px;
+  flex-basis: 105px;
 }
 
 .it-header__column--5 {
@@ -77,6 +93,7 @@
 .it-location {
   padding-left: 30px;
   position: relative;
+
 }
 
 .it-location:before {
@@ -93,6 +110,9 @@
 .it-location__text {
   font-size: 14px;
   color: #9FA3B0;
+  @include phones {
+    font-size: 12px;
+  }
 }
 
 .it-location__text--adress {
@@ -103,6 +123,14 @@
   font-weight: 300;
   font-size: 14px;
   color: #333333;
+  @include phones {
+    display: none;
+  }
+}
+
+.it-header__phone-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .it-phone {
@@ -113,6 +141,9 @@
   padding-left: 35px;
   display: block;
   margin-bottom: 10px;
+  @include phones {
+    font-size: 12px;
+  }
 }
 
 .it-phone:hover {
@@ -138,6 +169,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  @include phones {
+    top: -2px;
+  }
 }
 
 
@@ -183,12 +217,15 @@
 
 
 .it-header__buttons {
-  max-width: 195px;
   width: 100%;
 }
 
 .it-header__buttons .it-header__btn {
     font-size: 14px;
+  @include phones {
+    font-size: 12px;
+    padding: 8px 2px;
+  }
 }
 
 .it-search {
@@ -202,6 +239,9 @@
   padding: 10px 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
+  @include phones {
+    padding: 5px 5px;
+  }
 }
 
 .it-search__btn {

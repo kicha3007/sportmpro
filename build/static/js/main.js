@@ -262,3 +262,23 @@ $("[data-file-default]").change(function () {
     $(this).parent().find("[data-file-name]").text(f_name.join(', '));
 });
 
+
+/* ****************************** dropdown-menu ****************************** */
+
+    var $trigger = $('[data-trigger="1"]');
+    var $nav = $('[data-it-nav]');
+    var $this = $(this);
+
+
+    $trigger.on("click", function () {
+        $trigger.toggleClass('active');
+        $nav.slideToggle(600, function () {
+            if ($(this).css("display") === "none") {
+                $(this).removeAttr("style");
+            }
+        });
+
+    });
+
+
+

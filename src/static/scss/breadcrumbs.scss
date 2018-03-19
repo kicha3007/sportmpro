@@ -2,3 +2,41 @@
 @import "__mixins";
 @import "smart-grid";
 
+
+
+.it-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.it-breadcrumbs__link {
+  color: #9FA3B0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.it-breadcrumbs__link:hover {
+  color: #9FA3B0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.it-breadcrumbs__link:active,
+.it-breadcrumbs__link:visited {
+  color: #9FA3B0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
+.it-breadcrumbs__separator {
+  color: #9FA3B0;
+  font-size: 14px;
+}
+
+.it-breadcrumbs span:last-child {
+  color: #E31E24;
+  font-size: 14px;
+}

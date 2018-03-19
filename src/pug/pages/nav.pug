@@ -1,24 +1,63 @@
 nav.it-main-nav
 	.it-container
-		.it-main-nav__wrap
-			ul
-				li.active
-					a(href="#")
-				li
-					a(href="#")
-						ul
-							li
-								a(href="#")
-									ul
-										li
-											a(href="#")
-				li
-					a(href="#")
-				li
-					a(href="#")
-				li
-					a(href="#")
-				li
-					a(href="#")
+		.it-nav__trigger.it-nav__trigger--indent(data-trigger='1')
+			span.it-nav__trigger-line.it-nav__trigger-line--top
+			span.it-nav__trigger-line.it-nav__trigger-line--middle
+			span.it-nav__trigger-line.it-nav__trigger-line--bottom
+		.it-main-nav__wrap(data-it-nav)
+			ul.it-main-nav__list
+				li.it-main-nav__item.active
+					a(href="#").it-main-nav__link
+						img(src="static/img/nav/1.png" title="")
+				li.it-main-nav__item
+					a(href="#").it-main-nav__link
+						|	О компании
+					ul.it-main-nav__dropdown-list
+						li.it-main-nav__dropdown-item
+							a(href="#").it-main-nav__dropdown-link
+								|	Доставка заказов
+						li.it-main-nav__dropdown-item
+							a(href="#").it-main-nav__dropdown-link
+								|	Каталоги продукции
+						li.it-main-nav__dropdown-item
+							a(href="#").it-main-nav__dropdown-link
+								|	Оптовым покупателям
+						li.it-main-nav__dropdown-item
+							a(href="#").it-main-nav__dropdown-link
+								|	Технологии
+							ul.it-main-nav__underdropdown-list
+								li.it-main-nav__underdropdown-item
+									a(href="#").it-main-nav__underdropdown-link
+										|	Пример
+								li.it-main-nav__underdropdown-item
+									a(href="#").it-main-nav__underdropdown-link
+										|	Пример
+								li.it-main-nav__underdropdown-item
+									a(href="#").it-main-nav__underdropdown-link
+										|	Пример
+								li.it-main-nav__underdropdown-item
+									a(href="#").it-main-nav__underdropdown-link
+										|	Пример
+								li.it-main-nav__underdropdown-item
+									a(href="#").it-main-nav__underdropdown-link
+										|	Пример
+								li.it-main-nav__underdropdown-item
+									a(href="#").it-main-nav__underdropdown-link
+										|	Пример
+				li.it-main-nav__item
+					a(href="#").it-main-nav__link
+						|	Каталог
+				li.it-main-nav__item
+					a(href="#").it-main-nav__link
+						|	Полезное
+				li.it-main-nav__item
+					a(href="#").it-main-nav__link
+						|	Специальные предложения
+				li.it-main-nav__item
+					a(href="#").it-main-nav__link
+						|	Вопрос - ответ
+				li.it-main-nav__item
+					a(href="#").it-main-nav__link
+						|	Контакты
 
 

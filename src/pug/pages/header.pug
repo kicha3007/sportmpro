@@ -1,4 +1,5 @@
 header.it-header
+    .it-container
         .it-header__wrap
             .it-header__inner-wrap
 
@@ -17,7 +18,7 @@ header.it-header
                         a.it-phone(href='tel:+73452499-522')
                             span.it-phone__img-wrap
                                 img.it-phone__img(src='static/img/header/phone/1.png', alt='')
-                            | +7 (3452)
+                            | +7 (3452)    &#32;
                             b 565-292
 
                 .it-header__column.it-header__column--4
@@ -35,6 +36,7 @@ header.it-header
                         input.it-search__input.form-control(tabindex="1" name="s" placeholder="Поиск")
                         button.it-search__btn()
                             img(src="static/img/header/search/1.png" alt="")
+    include nav
 
 
 

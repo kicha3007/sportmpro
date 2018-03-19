@@ -156,7 +156,7 @@ body * {
 
 .it-main-page__top {
   @include row-flex();
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
 }
 
 .it-main-page__left {

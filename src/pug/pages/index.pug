@@ -12,10 +12,9 @@ html(lang="ru-RU")
     body
         .it-main-page__wrapper
             .it-main-page__content
+                include header
+                include breadcrumbs
                 .it-container
-                    include header
-                    include nav
-                    include breadcrumbs
                     .it-main-page__top
                         .it-main-page__left
                             include card
@@ -27,7 +26,6 @@ html(lang="ru-RU")
                             include about-us
                             include photo
                             include callback
-
                         aside.it-main-page__right
                             include other-progects
                     include modal
