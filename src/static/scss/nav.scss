@@ -33,6 +33,16 @@
 
 }
 
+.it-main-nav__svg {
+  fill: #898989;
+  transition: 0.2s;
+}
+
+.it-main-nav__item.active .it-main-nav__svg,
+.it-main-nav__item:hover .it-main-nav__svg {
+  fill: $main-color ;
+}
+
 
 .it-main-nav__link {
   padding: 10px 2px;
@@ -95,6 +105,7 @@
 
 .it-main-nav__dropdown-item {
   list-style-type: none;
+  position: relative;
 }
 
 .it-main-nav__dropdown-link {
@@ -179,6 +190,18 @@
   @include phones {
     position: static;
   }
+}
+
+.it-main-nav__list li a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid #000000;
+  top: 50% ;
+  right: 15px;
+  margin-top: -2px;
 }
 
 
