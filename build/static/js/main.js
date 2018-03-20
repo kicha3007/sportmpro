@@ -86,7 +86,6 @@ $(function () {
         e.preventDefault();
         var $form = $(this);
         var $data = new FormData($form[0]);
-        console.log($form.attr("action"));
         $.post(
             {
                 url: $form.attr("action"),
@@ -146,7 +145,6 @@ $(function () {
 
     $("[data-min-nav-item]").on("click", function () {
         var minNavItemVal = $(this).text();
-        console.log(minNavItemVal);
         $("[data-min-nav-title]").text(minNavItemVal);
         $("[data-min-nav-dropdown]").hide();
 

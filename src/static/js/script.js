@@ -1,24 +1,43 @@
+/* ------------------- show-preview-to-bit-img ------------------- */
 
-document.onload = function () {
+    var modelChoiceItems = document.querySelectorAll(".it-card__model-checkbox-pseudo");
+    var modelBigImg = document.querySelector("[data-model-big-img]");
 
-    var modelChoiceItems = document.querySelectorAll("[data-modal-item]");
-    console.log(modelChoiceItems.length);
-    console.log(1);
+    for (var i = 0; i < modelChoiceItems.length; i++) {
 
-    for (var g = 0; g < modelChoiceItems.length; g++) {
+        var modelChoiceItem = modelChoiceItems[i];
+             modelChoiceItem.onclick = function(e) {
 
-        var modelChoiceItem = modelChoiceItems[g];
-        modelChoiceItem.onclick = function () {
-            console.log(1);
+            var modelChoiceImg = this.querySelector("[data-model-img]");
+            var modelChoiceImgValue = modelChoiceImg.getAttribute("src");
+
+            modelBigImg.setAttribute("src", modelChoiceImgValue);
+
         };
     }
 
+/* ------------------- counter-number ------------------- */
+
+var signMinus = document.querySelector("[data-sign-minus]");
+var signPlus =  document.querySelector("[data-sign-plus]");
+var signNumber = document.querySelector("[data-sign-value]");
 
 
-
-
+signNumber.oninput = function () {
+    this.value = this.value.replace(/\D/g, '');
 };
 
+// var signValue = signNumber.value;
 
+signMinus.onclick = function () {
 
-// var modalChoiceImg = this.querySelector("[data-modal-img]");
+    if(signNumber.value != 0) {
+        var signValueCheange = --signNumber.value;
+        signNumber.setAttribute("value", signValueCheange);
+    }
+};
+
+signPlus.onclick = function () {
+        var signValueCheange = ++signNumber.value;
+        signNumber.setAttribute("value", signValueCheange);
+};
