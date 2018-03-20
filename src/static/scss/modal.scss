@@ -292,3 +292,15 @@
   flex-grow: 1;
 
 }
+
+//******************* it-modal-size *******************/
+.it-modal-size {
+  width: 700px;
+  max-width:100%;
+}
+
+.it-modal-size__img {
+  max-width:100%;
+  display: block;
+  height: auto;
+}

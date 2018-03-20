@@ -4,29 +4,28 @@ section.it-callback.it-all--indent
 				|    Остались вопросы?
 			.it-callback-subtitle
 				|	Отправьте контактные данные, и менеджер свяжется с вами в ближайшее время!
-			.it-callback__input-wrap
-				form.it-callback__form(action="", method="post")
-					.it-callback__input-wrap
-						.it-callback__half
-							input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Ваше имя', required)
-						.it-callback__half
-							input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required, data-mask='phone')
-						//.it-callback__half
-						//	.it-callback__input-title
-						//		|    Электронная почта
-						//	input.it-callback__input(type='mail', name='mail', maxlength='200', value='', placeholder='abc@mail.ru', )
-						.it-callback__half.it-callback__buttons
-							a(href="").it-btn.it-callback__btn Отправить
+			form.it-callback__form(action="", method="post")
+				.it-callback__input-wrap
+					.it-callback__half
+						input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Ваше имя', required)
+					.it-callback__half
+						input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required, data-mask='phone')
+					//.it-callback__half
+					//	.it-callback__input-title
+					//		|    Электронная почта
+					//	input.it-callback__input(type='mail', name='mail', maxlength='200', value='', placeholder='abc@mail.ru', )
+					.it-callback__half.it-callback__buttons
+						a(href="").it-btn.it-callback__btn Отправить
 
-					.it-checkbox-wrap.it-callback__checkbox-wrap
-						label.it-checkbox
-									input.it-checkbox__default(type="checkbox" name="AGREE" checked)
-									span.it-checkbox__pseudo
-									span.it-checkbox__text
-										|	Подтверждаю свое согласие
-										br
-										|	на обработку персональных данных
-						.it-form__success
-							| Спасибо!
-							br
-							|  Ваша заявка принята.
+				.it-checkbox-wrap.it-callback__checkbox-wrapF
+					label.it-checkbox
+								input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+								span.it-checkbox__pseudo
+								span.it-checkbox__text
+									|	Подтверждаю свое согласие
+									br
+									|	на обработку персональных данных
+					.it-form__success
+						| Спасибо!
+						br
+						|  Ваша заявка принята.

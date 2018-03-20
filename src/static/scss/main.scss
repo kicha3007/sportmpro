@@ -212,19 +212,19 @@ body * {
   color: #000000;
   border: 1px solid $main-color;
 
-
 }
 
-.it-btn--transparent:hover {
-  border: 1px solid $main-color-hover;
-  color: #000000;
-  background: transparent;
-}
 
-.it-btn--transparent:hover,
+
 .it-btn--transparent:active,
 .it-btn--transparent:visited {
   color: #000000;
+}
+
+.it-btn--transparent:hover {
+  border: 1px solid $main-color;
+  color: #ffffff;
+  background: $main-color;
 }
 
 .it-btn--arrow {

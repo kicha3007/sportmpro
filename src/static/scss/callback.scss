@@ -8,7 +8,7 @@
 
 
 .it-callback__wrap {
-  padding: 35px 25px;
+  padding: 35px 10px;
   overflow: hidden;
   background-color: #EDEDED;
 }
@@ -62,10 +62,10 @@
 
 .it-callback__half {
   flex-grow: 1;
-  flex-basis: 150px;
+  flex-basis: 180px;
   width: 100%;
   margin: 0 10px 25px;
-  max-width: 252px;
+  max-width: 260px;
 }
 
 
@@ -99,6 +99,8 @@
   max-width: 100px;
   width: 100%;
   margin-top: auto;
+  flex-grow: 1;
+  flex-basis: 100px;
 }
 
 
@@ -217,6 +219,12 @@
   justify-content: center;
   margin: 0 0 5px;
 }
+
+.it-checkbox--size {
+  max-width: 400px;
+}
+
+
 /******************* success *******************/
 
 .it-form__success {
@@ -259,6 +267,7 @@
   display: inline-block;
 }
 
+/*
 .it-callback__file-label:before {
 	content: 'doc, docx, xls, pdf, jpg. Размер не более 10 Mb';
 	display: block;
@@ -273,7 +282,9 @@
   z-index: 20;
   line-height: 1.2;
 
+
 }
+*/
 
 .it-callback__file {
   display: none !important;
@@ -282,7 +293,7 @@
 
 .it-callback__file-name {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 50%;
   margin-left: -80px;
   width: 160px;
@@ -302,4 +313,9 @@
 .it-callback .it-callback__file-title {
   padding-top: 11px;
   padding-bottom: 11px;
+}
+
+.it-callback__half--size {
+  max-width: 178px;
+  flex-basis: 140px;
 }

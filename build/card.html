@@ -2,8 +2,7 @@
 <section class="it-card">
   <div class="it-card__wrap">
     <div class="it-card__top">
-      <div class="it-card__half it-card__half--left">
-        <div class="it-card__img-box"><img class="it-card__img" src="static/img/card/1.jpg" alt=""/></div>
+      <div class="it-card__half it-card__half--left"><a class="it-card__img-box" href="static/img/card/1.jpg" data-modal="data-modal"><img class="it-card__img" src="static/img/card/1.jpg" alt=""/></a>
         <div class="it-card__code">	Арт. 312-345</div>
       </div>
       <div class="it-card__half it-card__half--right">
@@ -15,28 +14,28 @@
             <div class="it-card__model-price">от<span class="it-card__model-price-value">	0 000 ₽</span></div>
             <div class="it-card__model-choice">	Выберите модель свитера:</div>
             <ul class="it-card__model-list">
-              <li class="it-card__model-item">
+              <li class="it-card__model-item" data-modal-item="data-modal-item">
                 <label class="it-card__model-checkbox">
                   <input class="it-card__model-checkbox-default" type="radio" name="model1" checked="checked"/>
-                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/2.jpg" alt=""/></div>
+                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/2.jpg" alt="" data-modal-img="data-modal-img"/></div>
                 </label>
               </li>
-              <li class="it-card__model-item">
+              <li class="it-card__model-item" data-modal-item="data-modal-item">
                 <label class="it-card__model-checkbox">
                   <input class="it-card__model-checkbox-default" type="radio" name="model1"/>
-                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/3.jpg" alt=""/></div>
+                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/3.jpg" alt="" data-modal-img="data-modal-img"/></div>
                 </label>
               </li>
-              <li class="it-card__model-item">
+              <li class="it-card__model-item" data-modal-item="data-modal-item">
                 <label class="it-card__model-checkbox">
                   <input class="it-card__model-checkbox-default" type="radio" name="model1"/>
-                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/4.jpg" alt=""/></div>
+                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/4.jpg" alt="" data-modal-img="data-modal-img"/></div>
                 </label>
               </li>
-              <li class="it-card__model-item">
+              <li class="it-card__model-item" data-modal-item="data-modal-item">
                 <label class="it-card__model-checkbox">
                   <input class="it-card__model-checkbox-default" type="radio" name="model1"/>
-                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/5.jpg" alt=""/></div>
+                  <div class="it-card__model-checkbox-pseudo"><img class="it-card__model-checkbox-img" src="static/img/card/5.jpg" alt="" data-modal-img="data-modal-img"/></div>
                 </label>
               </li>
             </ul><a class="it-card__model-show-all" href="#">	показать все модели свитеров</a>
@@ -65,14 +64,14 @@
               <label class="it-checkbox it-card__checkbox">
                 <input class="it-checkbox__default" type="checkbox" name="AGREE"/><span class="it-checkbox__pseudo it-card__checkbox-pseudo"></span><span class="it-checkbox__text it-card__checkbox-text">   Срочный заказ (3-4 дня)<br/>надбавка 25%</span>
               </label>
-            </div><a class="it-card__show-catalog" href="#">	посмотреть каталог размеров и цен</a>
+            </div><a class="it-card__show-catalog" href="#it-modal-size" data-modal="data-modal">	посмотреть каталог размеров и цен</a>
             <div class="it-card__all-price">
               <div class="it-card__all-price-text">	Общая стоимость:</div>
               <div class="it-card__all-price-number">от &#32;<span class="it-card__all-price-value">00 000 &#32;</span>руб.*</div>
             </div>
             <div class="it-card__buttons-wrap">
               <div class="it-card__buttons"><a class="it-btn it-card__btn" href="#it-modal1" data-modal="data-modal">	Оформить заказ</a></div>
-              <div class="it-card__buttons"><a class="it-btn it-card__btn it-card__btn--all-transparent">	Добавить деталей к заказу</a></div>
+              <div class="it-card__buttons"><a class="it-btn it-card__btn it-card__btn--all-transparent" href="#it-steps">	Добавить деталей к заказу</a></div>
             </div>
           </div>
         </form>

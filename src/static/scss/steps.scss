@@ -7,7 +7,7 @@
 .it-steps__wrap {
   padding: 40px 25px;
   position: relative;
-  min-height: 420px;
+  //min-height: 420px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #EDEDED;
 }
@@ -619,3 +619,7 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
+
+.it-steps__item-wrap--indent  {
+   margin-bottom: 0;
+ }

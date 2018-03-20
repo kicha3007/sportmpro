@@ -1,5 +1,5 @@
 // --------------------- it-steps -------------------------
-section.it-steps.it-all--indent
+section.it-steps.it-all--indent#it-steps
 		.it-steps__wrap
 			.it-steps__title(data-calculation-title)
 				b
@@ -36,14 +36,14 @@ section.it-steps.it-all--indent
 				form.it-steps__form.it-form--hide(action='/sendCallBack.php', data-it-form='')
 					ul.it-steps__inner-wrap
 						li.it-steps__inner-item(data-it-calculation-item='1')
-							.it-steps__item-wrap
+							.it-steps__item-wrap.it-steps__item-wrap--indent
 								.it-steps__item-half
 									.it-steps__item-half-title
 										|	Способ нанесения  логотипа:
 									.it-steps__select-wrap
 										select.it-steps__select(name='fuel', required='' )
 											option(value='Сублимационная печать', selected='', )
-												| Газовый котел
+												| Сублимационная печать
 											option(value='Электрический котел')
 												| Электрический котел
 											option(value='Пеллетный котел')
@@ -52,8 +52,9 @@ section.it-steps.it-all--indent
 									.it-steps__item-half-title
 										|    Загрузите логотип:
 									label.it-callback__file-label.it-steps__file-label
-										input.it-callback__file#add_file(name='file', type='file' data-file-default)
+										input.it-callback__file#add_file(name='file', type='file' data-file-default accept="image/jpeg,image/png,image/gif" )
 										span.it-callback__file-title.it-steps__file-title.it-btn.it-btn--transparent Прикрепить
+										.it-callback__file-name(data-file-name='')
 								.it-steps__item-half
 									.it-steps__item-half-title
 										|    Понадобятся ли вам нашивки?

@@ -42,9 +42,9 @@
     position: absolute;
     width: 3px;
     height: 22px;
-    top: 0;
-    right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+    top: 15px;
+    right: -10px;
+    background-color: rgba(0, 0, 0, 0.2);
   @include phones {
     display: none;
   }

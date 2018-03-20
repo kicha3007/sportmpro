@@ -1,4 +1,6 @@
 
+
+
 /* ------------------- fancybox ------------------- */
 
 $("[data-modal]").fancybox({
@@ -279,6 +281,8 @@ $("[data-file-default]").change(function () {
         });
 
     });
+
+
 
 
 

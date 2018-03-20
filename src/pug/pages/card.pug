@@ -2,7 +2,7 @@ section.it-card
 	.it-card__wrap
 		.it-card__top
 			.it-card__half.it-card__half--left
-				.it-card__img-box
+				a(href="static/img/card/1.jpg" data-modal).it-card__img-box
 					img(src="static/img/card/1.jpg", alt='').it-card__img
 				.it-card__code
 						|	Арт. 312-345
@@ -22,26 +22,26 @@ section.it-card
 							|	Выберите модель свитера:
 
 						ul.it-card__model-list
-							li.it-card__model-item
+							li.it-card__model-item(data-modal-item)
 								label.it-card__model-checkbox
-									input.it-card__model-checkbox-default(type="radio" name="model1" checked)
+									input.it-card__model-checkbox-default(type="radio" name="model1" checked )
 									.it-card__model-checkbox-pseudo
-										img(src="static/img/card/2.jpg", alt='').it-card__model-checkbox-img
-							li.it-card__model-item
-								label.it-card__model-checkbox
-									input.it-card__model-checkbox-default(type="radio" name="model1" )
-									.it-card__model-checkbox-pseudo
-										img(src="static/img/card/3.jpg", alt='').it-card__model-checkbox-img
-							li.it-card__model-item
+										img(src="static/img/card/2.jpg", alt='' data-modal-img).it-card__model-checkbox-img
+							li.it-card__model-item(data-modal-item)
 								label.it-card__model-checkbox
 									input.it-card__model-checkbox-default(type="radio" name="model1" )
 									.it-card__model-checkbox-pseudo
-										img(src="static/img/card/4.jpg", alt='').it-card__model-checkbox-img
-							li.it-card__model-item
+										img(src="static/img/card/3.jpg", alt='' data-modal-img).it-card__model-checkbox-img
+							li.it-card__model-item(data-modal-item)
 								label.it-card__model-checkbox
 									input.it-card__model-checkbox-default(type="radio" name="model1" )
 									.it-card__model-checkbox-pseudo
-										img(src="static/img/card/5.jpg", alt='').it-card__model-checkbox-img
+										img(src="static/img/card/4.jpg", alt='' data-modal-img).it-card__model-checkbox-img
+							li.it-card__model-item(data-modal-item)
+								label.it-card__model-checkbox
+									input.it-card__model-checkbox-default(type="radio" name="model1" )
+									.it-card__model-checkbox-pseudo
+										img(src="static/img/card/5.jpg", alt='' data-modal-img).it-card__model-checkbox-img
 
 						a(href="#").it-card__model-show-all
 							|	показать все модели свитеров
@@ -80,7 +80,7 @@ section.it-card
 									|    Срочный заказ (3-4 дня)
 									br
 									| надбавка 25%
-						a(href="#").it-card__show-catalog
+						a(href="#it-modal-size" data-modal).it-card__show-catalog
 							|	посмотреть каталог размеров и цен
 
 						.it-card__all-price
@@ -96,6 +96,6 @@ section.it-card
 								a(href="#it-modal1" data-modal).it-btn.it-card__btn
 									|	Оформить заказ
 							.it-card__buttons
-								a.it-btn.it-card__btn.it-card__btn--all-transparent
+								a(href="#it-steps").it-btn.it-card__btn.it-card__btn--all-transparent
 									|	Добавить деталей к заказу
 

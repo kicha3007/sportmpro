@@ -1,6 +1,6 @@
 
 <!-- --------------------- it-steps --------------------------->
-<section class="it-steps it-all--indent">
+<section class="it-steps it-all--indent" id="it-steps">
   <div class="it-steps__wrap">
     <div class="it-steps__title" data-calculation-title="data-calculation-title"><b>	Добавьте деталей: &#32;</b>	расскажите о том, что вам нужно!</div>
     <div class="it-steps__item">
@@ -27,12 +27,12 @@
       <form class="it-steps__form it-form--hide" action="/sendCallBack.php" data-it-form="">
         <ul class="it-steps__inner-wrap">
           <li class="it-steps__inner-item" data-it-calculation-item="1">
-            <div class="it-steps__item-wrap">
+            <div class="it-steps__item-wrap it-steps__item-wrap--indent">
               <div class="it-steps__item-half">
                 <div class="it-steps__item-half-title">	Способ нанесения  логотипа:</div>
                 <div class="it-steps__select-wrap">
                   <select class="it-steps__select" name="fuel" required="">
-                    <option value="Сублимационная печать" selected="">Газовый котел</option>
+                    <option value="Сублимационная печать" selected="">Сублимационная печать</option>
                     <option value="Электрический котел">Электрический котел</option>
                     <option value="Пеллетный котел">Пеллетный котел</option>
                   </select>
@@ -41,7 +41,8 @@
               <div class="it-steps__item-half it-steps__item-half-file">
                 <div class="it-steps__item-half-title">   Загрузите логотип:</div>
                 <label class="it-callback__file-label it-steps__file-label">
-                  <input class="it-callback__file" id="add_file" name="file" type="file" data-file-default="data-file-default"/><span class="it-callback__file-title it-steps__file-title it-btn it-btn--transparent">Прикрепить</span>
+                  <input class="it-callback__file" id="add_file" name="file" type="file" data-file-default="data-file-default" accept="image/jpeg,image/png,image/gif"/><span class="it-callback__file-title it-steps__file-title it-btn it-btn--transparent">Прикрепить</span>
+                  <div class="it-callback__file-name" data-file-name=""></div>
                 </label>
               </div>
               <div class="it-steps__item-half">
