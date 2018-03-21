@@ -147,7 +147,110 @@
 
 .it-card__select-wrap {
   position: relative;
+
 }
+
+.it-card__select-wrap__popup {
+  position: absolute;
+  right: -117px;
+  top: -41px;
+  padding: 8px 10px;
+  border: 2px solid $main-color;
+  font-size: 12px;
+  font-weight: 300;
+  color: $main-color;
+  text-decoration: underline;
+  min-width: 150px;
+  border-radius: 5px ;
+  z-index: 2;
+  display: none;
+  background-color: #ffffff;
+}
+
+.it-card__select-wrap__popup:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -13px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-left: 12px solid $main-color;
+  z-index: 1;
+
+}
+
+.it-card__select-wrap__popup:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 10px solid #ffffff;
+  z-index: 2;
+}
+
+
+
+
+.it-card__select-wrap:hover .it-card__select-wrap__popup {
+  display: block;
+}
+
+
+.it-card__all-price-popup {
+  position: absolute;
+  right: -117px;
+  top: -41px;
+  padding: 8px 10px;
+  border: 2px solid $main-color;
+  font-size: 12px;
+  font-weight: 300;
+  color: $main-color;
+  text-decoration: underline;
+  min-width: 150px;
+  border-radius: 5px ;
+  z-index: 2;
+  display: none;
+  background-color: #ffffff;
+}
+
+.it-card__all-price-popup:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -13px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-left: 12px solid $main-color;
+  z-index: 1;
+}
+
+.it-card__all-price-popup:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 10px solid #ffffff;
+  z-index: 2;
+}
+
+
+.it-card__all-price-number:hover .it-card__all-price-popup {
+  display: block;
+}
+
+
 
 .it-card__select-wrap:before {
   content: '';
@@ -186,6 +289,7 @@
   border: none;
   text-align: center;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .it-card__checkbox {
@@ -234,6 +338,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .it-card__all-price-text {
@@ -245,6 +350,7 @@
 .it-card__all-price-number {
   color: #9FA3B0;
   font-size: 12px;
+  position: relative;
 }
 
 .it-card__all-price-value {
@@ -359,3 +465,33 @@
 
 
 
+.it-card__model-list--modal {
+  margin: 0 -15px -40px;
+}
+
+.it-card__model-list--modal .it-card__model-item {
+  margin: 0 15px 40px;
+  width: 130px;
+  height: 165px;
+}
+
+.it-card__model-list--modal  .it-card__model-checkbox-pseudo {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  max-width: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.it-card__model-list--modal .it-card__model-checkbox {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  max-width: none;
+
+
+}

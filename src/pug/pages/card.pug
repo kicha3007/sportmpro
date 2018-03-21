@@ -42,19 +42,60 @@ section.it-card
 									.it-card__model-checkbox-pseudo
 										img(src="static/img/card/5.jpg", alt='' data-model-img).it-card__model-checkbox-img
 
-						a(href="#").it-card__model-show-all
+						a(href="#it-modal-model" data-modal).it-card__model-show-all
 							|	показать все модели свитеров
+						.it-modal-model.it-modal#it-modal-model
+							.it-container
+								.it-modal-policy__wrap
+									ul.it-card__model-list.it-card__model-list--modal
+										li.it-card__model-item(data-model-item)
+											label.it-card__model-checkbox
+												input.it-card__model-checkbox-default(type="radio" name="model1" checked )
+												.it-card__model-checkbox-pseudo
+													img(src="static/img/card/2.jpg", alt='' data-model-img).it-card__model-checkbox-img
+										li.it-card__model-item(data-model-item)
+											label.it-card__model-checkbox
+												input.it-card__model-checkbox-default(type="radio" name="model1" )
+												.it-card__model-checkbox-pseudo
+													img(src="static/img/card/3.jpg", alt='' data-model-img).it-card__model-checkbox-img
+										li.it-card__model-item(data-model-item)
+											label.it-card__model-checkbox
+												input.it-card__model-checkbox-default(type="radio" name="model1" )
+												.it-card__model-checkbox-pseudo
+													img(src="static/img/card/4.jpg", alt='' data-model-img).it-card__model-checkbox-img
+										li.it-card__model-item(data-model-item)
+											label.it-card__model-checkbox
+												input.it-card__model-checkbox-default(type="radio" name="model1" )
+												.it-card__model-checkbox-pseudo
+													img(src="static/img/card/5.jpg", alt='' data-model-img).it-card__model-checkbox-img
+										li.it-card__model-item(data-model-item)
+											label.it-card__model-checkbox
+												input.it-card__model-checkbox-default(type="radio" name="model1" )
+												.it-card__model-checkbox-pseudo
+													img(src="static/img/card/5.jpg", alt='' data-model-img).it-card__model-checkbox-img
+										li.it-card__model-item(data-model-item)
+											label.it-card__model-checkbox
+												input.it-card__model-checkbox-default(type="radio" name="model1" )
+												.it-card__model-checkbox-pseudo
+													img(src="static/img/card/5.jpg", alt='' data-model-img).it-card__model-checkbox-img
+										li.it-card__model-item(data-model-item)
+											label.it-card__model-checkbox
+												input.it-card__model-checkbox-default(type="radio" name="model1" )
+												.it-card__model-checkbox-pseudo
+													img(src="static/img/card/5.jpg", alt='' data-model-img).it-card__model-checkbox-img
+
+
 						label.it-card__input-wrap
 							.it-card__input-text
 								|	Тип свитера:
 							.it-card__select-wrap
 								select.it-card__select(name='fuel', required='' )
-									option(value='Классический', selected='', )
-										| Классический
+									option(value='Анатомический', selected='', )
+										| Анатомический
 									option(value='Электрический котел')
-										| Электрический котел
-									option(value='Пеллетный котел')
-										| Пеллетный котел
+										| Игровой
+								a(href="#").it-card__select-wrap__popup
+									|	Узнать, в чем разница
 						label.it-card__input-wrap
 							.it-card__input-text
 								|	Количество:
@@ -90,6 +131,8 @@ section.it-card
 								span.it-card__all-price-value
 									| 00 000 &#32;
 								| руб.*
+								a(href="#").it-card__all-price-popup
+									|	Узнать подробности
 						.it-card__buttons-wrap
 							.it-card__buttons
 								a(href="#it-modal1" data-modal).it-btn.it-card__btn

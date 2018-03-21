@@ -69,7 +69,10 @@
 
 .it-header__column--3 {
   max-width: 280px;
-  flex-basis: 133px;
+  flex-basis: 193px;
+  @include phones {
+    flex-basis: 133px;
+  }
 
 }
 
