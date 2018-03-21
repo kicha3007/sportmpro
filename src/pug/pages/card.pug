@@ -2,7 +2,7 @@ section.it-card
 	.it-card__wrap
 		.it-card__top
 			.it-card__half.it-card__half--left
-				a(href="static/img/card/1.jpg" ).it-card__img-box
+				a(href="static/img/card/1.jpg" data-modal).it-card__img-box
 					img(src="static/img/card/1.jpg", alt=''  data-model-big-img).it-card__img
 				.it-card__code
 						|	Арт. 312-345
@@ -94,7 +94,7 @@ section.it-card
 										| Анатомический
 									option(value='Электрический котел')
 										| Игровой
-								a(href="#").it-card__select-wrap__popup
+								a(href="#it-modal-difference" data-modal).it-card__select-wrap__popup
 									|	Узнать, в чем разница
 						label.it-card__input-wrap
 							.it-card__input-text
@@ -131,7 +131,7 @@ section.it-card
 								span.it-card__all-price-value
 									| 00 000 &#32;
 								| руб.*
-								a(href="#").it-card__all-price-popup
+								a(href="#it-modal-price" data-modal).it-card__all-price-popup
 									|	Узнать подробности
 						.it-card__buttons-wrap
 							.it-card__buttons

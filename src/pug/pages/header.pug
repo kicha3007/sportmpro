@@ -2,16 +2,15 @@ header.it-header
     .it-container
         .it-header__wrap
             .it-header__inner-wrap
-
                 .it-header__column.it-header__column--1
-                    a.it-logo(href='#')
+                    a.it-logo(href='/')
                         .it-logo__img-box
                             img.it-logo__img(src='static/img/header/logo.png', alt='')
                 .it-header__column.it-header__column--2
                     .it-location
                         .it-location__text.it-location__text--city
                             |   г. Тюмень,
-                        .it-location__text.it-location__text--adress
+                        a(href="#it-modal-ma" data-modal data-modal-map).it-location__text.it-location__text--adress
                             |   ул. Бакинских Комиссаров, д.4
                 .it-header__column.it-header__column--3
                     .it-header__phone-wrap

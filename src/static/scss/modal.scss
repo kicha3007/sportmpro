@@ -310,3 +310,41 @@
   padding: 10%;
 }
 
+.it-modal-price {
+  width: 515px;
+  max-width: 100%;
+  padding: 10% 10%;
+}
+
+.it-modal-price p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 25px;
+}
+
+.it-modal-price span {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.it-modal-difference {
+  width: 1030px;
+  max-width: 100%;
+}
+
+.it-modal-map {
+  width: 1030px;
+  max-width: 100%;
+  background: transparent;
+  max-height: 495px;
+}
+
+.it-modal-map__img-box {
+  max-width: 229px;
+  width: 100%;
+}
+
+#it-modal-map__wrap {
+  width: 1030px;
+  max-width: 100%;
+  height: 495px;
+}

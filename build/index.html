@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <div class="it-main-page__wrapper">
@@ -16,12 +17,11 @@
           <div class="it-container">
             <div class="it-header__wrap">
               <div class="it-header__inner-wrap">
-                <div class="it-header__column it-header__column--1"><a class="it-logo" href="#">
+                <div class="it-header__column it-header__column--1"><a class="it-logo" href="/">
                     <div class="it-logo__img-box"><img class="it-logo__img" src="static/img/header/logo.png" alt=""></div></a></div>
                 <div class="it-header__column it-header__column--2">
                   <div class="it-location">
-                    <div class="it-location__text it-location__text--city">  г. Тюмень,</div>
-                    <div class="it-location__text it-location__text--adress">  ул. Бакинских Комиссаров, д.4</div>
+                    <div class="it-location__text it-location__text--city">  г. Тюмень,</div><a class="it-location__text it-location__text--adress" href="#it-modal-ma" data-modal data-modal-map>  ул. Бакинских Комиссаров, д.4</a>
                   </div>
                 </div>
                 <div class="it-header__column it-header__column--3">
@@ -89,7 +89,7 @@
               <section class="it-card">
                 <div class="it-card__wrap">
                   <div class="it-card__top">
-                    <div class="it-card__half it-card__half--left"><a class="it-card__img-box" href="static/img/card/1.jpg"><img class="it-card__img" src="static/img/card/1.jpg" alt="" data-model-big-img></a>
+                    <div class="it-card__half it-card__half--left"><a class="it-card__img-box" href="static/img/card/1.jpg" data-modal><img class="it-card__img" src="static/img/card/1.jpg" alt="" data-model-big-img></a>
                       <div class="it-card__code">	Арт. 312-345</div>
                     </div>
                     <div class="it-card__half it-card__half--right">
@@ -182,7 +182,7 @@
                               <select class="it-card__select" name="fuel" required="">
                                 <option value="Анатомический" selected="">Анатомический</option>
                                 <option value="Электрический котел">Игровой</option>
-                              </select><a class="it-card__select-wrap__popup" href="#">	Узнать, в чем разница</a>
+                              </select><a class="it-card__select-wrap__popup" href="#it-modal-difference" data-modal>	Узнать, в чем разница</a>
                             </div>
                           </label>
                           <label class="it-card__input-wrap">
@@ -203,7 +203,7 @@
                           </div><a class="it-card__show-catalog" href="#it-modal-size" data-modal>	посмотреть каталог размеров и цен</a>
                           <div class="it-card__all-price">
                             <div class="it-card__all-price-text">	Общая стоимость:</div>
-                            <div class="it-card__all-price-number">от &#32;<span class="it-card__all-price-value">00 000 &#32;</span>руб.*<a class="it-card__all-price-popup" href="#">	Узнать подробности</a></div>
+                            <div class="it-card__all-price-number">от &#32;<span class="it-card__all-price-value">00 000 &#32;</span>руб.*<a class="it-card__all-price-popup" href="#it-modal-price" data-modal>	Узнать подробности</a></div>
                           </div>
                           <div class="it-card__buttons-wrap">
                             <div class="it-card__buttons"><a class="it-btn it-card__btn" href="#it-modal1" data-modal>	Оформить заказ</a></div>
@@ -786,6 +786,24 @@
           <div class="it-modal-size it-modal" id="it-modal-size">
             <div class="it-container">
               <div class="it-modal-size__wrap"><img class="it-modal-size__img" src="static/img/modal/size/1.jpg" title=""></div>
+            </div>
+          </div>
+          <div class="it-modal-price it-modal" id="it-modal-price">
+            <div class="it-container">
+              <div class="it-modal-price__wrap">
+                <p>	*Конечная стоимость может отличаться от предварительного расчета. Стоимость может измениться, в зависимости от способа печати логотипа, количества нашивок, размерного ряда и других выбранных характеристик.</p>
+                <p>	Для более точного расчета позвоните<span>	+7 (3452) 65-91-89</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="it-modal-difference it-modal" id="it-modal-difference">
+            <div class="it-container">
+              <div class="it-modal-size__wrap"><img class="it-modal-size__img" src="static/img/modal/difference/1.jpg" title=""></div>
+            </div>
+          </div>
+          <div class="it-modal-map" id="it-modal-map">
+            <div class="it-container">
+              <div class="it-modal-map__wrap" id="it-modal-map__wrap"></div>
             </div>
           </div>
         </div>
