@@ -280,43 +280,6 @@ $("[data-file-default]").change(function () {
 
     });
 
-/* ****************************** ya-maps ****************************** */
-
-
-    $(document).ready(function(){
-        document.querySelector("[data-modal-map]").onclick = function () {
-
-        };
-
-
-            ymaps.ready(init);
-            var myMap, myPlacemark;
-
-            function init(){
-                myMap = new ymaps.Map("it-modal-map__wrap", {
-                    center: [57.163611, 65.479369],
-                    zoom: 16
-                });
-
-                myPlacemark = new ymaps.Placemark([57.163611, 65.479369], {
-                    hintContent: '',
-                    balloonContent:
-                    '<div class="it-modal-map__img-box">\n' +
-                    '   <img class="it-modal-map__img" src="static/img/modal/map/1.png">\n' +
-                    '</img>'
-                });
-
-                myMap.geoObjects.add(myPlacemark);
-                myPlacemark.balloon.open();//.then(
-
-
-        }
-
-
-
-
-
-    });
 
 
 
